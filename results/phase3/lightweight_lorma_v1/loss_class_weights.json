@@ -1,0 +1,15 @@
+{
+  "Fact": 0.5,
+  "Issue": 2.8580105304718018,
+  "ArgumentPetitioner": 0.7361028790473938,
+  "ArgumentRespondent": 0.8052129745483398,
+  "Statute": 0.8917782306671143,
+  "Dissent": 1.7542704343795776,
+  "PrecedentReliedUpon": 0.6703411936759949,
+  "PrecedentNotReliedUpon": 1.239366054534912,
+  "PrecedentOverruled": 4.0,
+  "RulingByLowerCourt": 1.0,
+  "RatioOfTheDecision": 0.5,
+  "RulingByPresentCourt": 1.6872775554656982,
+  "None": 1.7154477834701538
+}

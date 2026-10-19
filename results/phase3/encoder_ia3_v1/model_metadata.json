@@ -1,0 +1,35 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_enc_layer": 6,
+    "n_dec_layer": 6,
+    "d_model": 768,
+    "n_head": 8,
+    "d_ff": 3072
+  },
+  "phase1_parameters": 123762176,
+  "selected_phase1_layers": null,
+  "adapter_targets": [
+    "enc_layers.0.attn.k_proj",
+    "enc_layers.0.attn.v_proj",
+    "enc_layers.0.ff.2",
+    "enc_layers.1.attn.k_proj",
+    "enc_layers.1.attn.v_proj",
+    "enc_layers.1.ff.2",
+    "enc_layers.2.attn.k_proj",
+    "enc_layers.2.attn.v_proj",
+    "enc_layers.2.ff.2",
+    "enc_layers.3.attn.k_proj",
+    "enc_layers.3.attn.v_proj",
+    "enc_layers.3.ff.2",
+    "enc_layers.4.attn.k_proj",
+    "enc_layers.4.attn.v_proj",
+    "enc_layers.4.ff.2",
+    "enc_layers.5.attn.k_proj",
+    "enc_layers.5.attn.v_proj",
+    "enc_layers.5.ff.2"
+  ],
+  "total_parameters": 68326253,
+  "trainable_parameters": 1239661,
+  "teacher_experiment": null
+}

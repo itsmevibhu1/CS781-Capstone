@@ -67,4 +67,8 @@ The script requires PyTorch, tokenizers, numpy, tqdm, matplotlib, nbformat, and 
 
 ## Saved run results
 
-[Browse Phase 3 results](../results/phase3/) for the experiment index, configurations, development scores, plots, and saved verification.
+[Browse Phase 3 results](../results/phase3/) for eight documented runs: the six `v1` experiment configurations and two `kd_context2` variants. Each run includes its saved settings, method description, development scores, plots, and verification artifacts. The index compares combined, CL, and IT scores and trainable parameter counts.
+
+The `kd_context2` tag is used for both a LoRMA+ teacher candidate and a smaller KD student; it does not mean both runs use distillation. The saved metadata identifies the KD teacher as `lightweight_lorma` and records the student blocks. Historical code commits and teacher checkpoint hashes were not exported and still need confirmation.
+
+All eight saved runs report training complete. Their development metrics are selection scores, not private test scores. Codabench submission IDs, scores, and acceptance have not yet been entered in the [experiment ledger](../experiments/runs.csv).

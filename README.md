@@ -32,7 +32,7 @@ Large artifacts remain in Google Drive:
 | `cs781_phase2/` | Phase 2 experiment outputs |
 | `cs781_phase3/` | Phase 3 experiment outputs |
 
-The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phase 2 and Phase 3 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Exact artifact paths and access instructions still need to be recorded for each completed run.
+The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phase 2 and Phase 3 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 3 runs are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
 
 Checkpoints, datasets, prediction archives, and executed notebook copies are excluded from new Git additions. Small metric/configuration files and selected plots can be copied into `results/phaseN/<experiment>_<run_tag>/` when available. Review files for credentials and dataset text before adding them.
 
@@ -51,7 +51,7 @@ Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VAL
 ## Remaining documentation
 
 - Inventory completed experiments and accepted submissions for each phase.
-- Add actual run configurations, result tables, plots, and analysis.
+- Add other phases’ run configurations, result tables, and plots, and expand analysis of the documented experiments.
 - Record exact checkpoint locations and reproducible environment versions.
 - Preserve the code/configuration associated with each submission, including earlier versions when available.
 - Add later phases and the LaTeX report as work progresses.
@@ -61,4 +61,4 @@ Keep competition solutions private and provide instructor access according to co
 
 ## Results
 
-[Browse results by phase](results/). Each phase contains an index of its documented experiments.
+[Browse results by phase](results/). Phase 3 currently contains eight documented runs with saved configurations, development score comparisons, plots, and verification. Each phase has its own experiment index; model weights remain in Drive.

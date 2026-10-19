@@ -1,0 +1,66 @@
+{
+  "experiment": "lightweight_lorma",
+  "spec": {
+    "architecture": "lightweight",
+    "method": "lorma",
+    "lr": 0.0002
+  },
+  "seed": 42,
+  "run_tag": "kd_context2",
+  "epochs": 6,
+  "batch_size": 4,
+  "grad_accum_steps": 4,
+  "max_length": 384,
+  "max_target_tokens": 256,
+  "context_sentences": 2,
+  "head_dropout": 0.15,
+  "head_lr_multiplier": 5.0,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.1,
+  "class_weight_power": 0.5,
+  "max_class_weight": 4.0,
+  "use_class_weights": true,
+  "patience": 3,
+  "adapter_rank": 8,
+  "adapter_alpha": 16.0,
+  "kd_weight": 0.5,
+  "kd_temperature": 2.0,
+  "teacher_requested": null,
+  "gradient_checkpointing": true,
+  "max_optimizer_steps": null,
+  "optimize_decoding": true,
+  "select_checkpoint_with_decoder": true,
+  "transition_strengths": [
+    0.0,
+    0.1,
+    0.3,
+    0.6
+  ],
+  "prior_corrections": [
+    0.0,
+    0.25
+  ],
+  "phase1_heads": {
+    "decoder_only": 12,
+    "encoder_decoder": 8,
+    "hybrid_prefixlm": 10,
+    "lightweight": 12
+  },
+  "labels": [
+    "Fact",
+    "Issue",
+    "ArgumentPetitioner",
+    "ArgumentRespondent",
+    "Statute",
+    "Dissent",
+    "PrecedentReliedUpon",
+    "PrecedentNotReliedUpon",
+    "PrecedentOverruled",
+    "RulingByLowerCourt",
+    "RatioOfTheDecision",
+    "RulingByPresentCourt",
+    "None"
+  ],
+  "tokenizer_hash": "b972fc6998aab69d09a010107f14c06b4540f6787e1d52b86a7ff98112584ac0",
+  "data_fingerprint": "69d160fbcc82b03152b68c13446f5111f577336ad5087a6921287551477f7c8a"
+}

@@ -1,0 +1,14 @@
+{
+  "checkpoint_reload_metric_matches": true,
+  "dev_json_metric_roundtrip": true,
+  "exact_label_vocabulary": true,
+  "all_test_ids": true,
+  "sentence_count_and_order": true,
+  "zip_root_json_roundtrip": true,
+  "train_dev_test_separate": true,
+  "test_documents": 10,
+  "test_sentences": 2197,
+  "official_test_score": null,
+  "training_complete": true,
+  "score_scope": "official dev used for checkpoint and decoder selection"
+}

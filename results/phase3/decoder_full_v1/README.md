@@ -1,33 +1,55 @@
 # Phase 3: decoder_full_v1
 
-Rhetorical role prediction for CL and IT documents using full fine-tuning of the Phase 1 decoder-only backbone with a sentence-classification head. Values below come from the saved run artifacts, not from rerunning training.
+Rhetorical role prediction for CL and IT documents using Full fine-tuning with the Phase 1 decoder-only origin. This page records the exported configuration and metrics; training was not rerun for documentation.
+
+## Method and implementation
+
+All backbone and classifier parameters are trainable.
+
+The current [Phase 3 notebook](../../../CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
+
+The original training code commit was not recorded in these artifacts. The linked notebook is the current repository version; its exact correspondence with the historical training code still needs confirmation.
 
 ## Saved configuration
 
 | Setting | Value |
 | --- | --- |
 | Experiment / run tag | `decoder_full` / `v1` |
-| Phase 1 backbone | 12 layers, hidden size 768, 12 heads, FFN size 3072 |
-| Vocabulary / backbone maximum length | 32,000 / 1,024 |
-| Total / trainable parameters | 111,630,445 / 111,630,445 |
+| Phase 1 origin | Decoder-only |
+| Adaptation | Full fine-tuning |
+| Original Phase 1 parameters | 110,418,432 |
+| Task model total / trainable parameters | 111,630,445 / 111,630,445 |
+| Trainable fraction | 100.00% |
 | Seed | 42 |
 | Configured maximum epochs / selected epoch | 6 / 4 |
 | Batch size / gradient accumulation | 4 / 4 |
-| Backbone / head learning rate | 0.00003 / 0.00015 |
+| Configured base / head learning rate | 3e-05 / 0.00015 |
 | Maximum input / target tokens | 384 / 256 |
 | Context sentences | 1 |
 | Head dropout / weight decay | 0.15 / 0.01 |
 | Warmup fraction / early-stopping patience | 0.1 / 3 |
-| Class weighting | Enabled; power 0.5, maximum weight 4.0 |
+| Class weighting | Enabled; power 0.5, maximum 4.0 |
+| Gradient checkpointing | True |
 | Selected transition strength / prior correction | 0.6 / 0.25 |
 
-The implementation is in the [Phase 3 notebook](../../../CS781_Phase3_Solution_Colab.ipynb), with the pipeline described in the [Phase 3 README](../../../Phase3/README.md). It uses BPE-tokenized sentence inputs with context, a classification head, class-weighted training, and development-selected sequence decoding. See [run_config.json](run_config.json), [model_metadata.json](model_metadata.json), and [decoder_config.json](decoder_config.json) for the saved settings.
+Original Phase 1 architecture configuration:
 
-The original training code commit was not recorded in these artifacts. The linked notebook is the current repository version; exact correspondence with the historical training code still needs confirmation.
+```json
+{
+  "vocab_size": 32000,
+  "n_layer": 12,
+  "n_embd": 768,
+  "n_head": 12,
+  "d_ff": 3072,
+  "max_len": 1024
+}
+```
+
+The source of truth is [run_config.json](run_config.json). Parameter counts, selected blocks, and exact adapter targets are in [model_metadata.json](model_metadata.json). Decode settings are in [decoder_config.json](decoder_config.json). Adapter and KD defaults in the common configuration apply only when that method uses them.
 
 ## Development results
 
-Scores use the 0–1 scale. Combined scores pool the CL and IT sentences before computing the macro average across all 13 labels, including labels with zero support.
+Scores use the 0–1 scale. The combined score pools CL and IT sentences and then averages across all 13 labels, including zero-support labels. It is not the average of the two domain scores.
 
 | Scope | Macro-F1 | Macro-precision | Macro-recall |
 | --- | ---: | ---: | ---: |
@@ -35,7 +57,7 @@ Scores use the 0–1 scale. Combined scores pool the CL and IT sentences before 
 | CL dev | 0.32049 | 0.37041 | 0.32177 |
 | IT dev | 0.37896 | 0.45231 | 0.36342 |
 
-The combined development set contains 2,142 sentences. Greedy decoding at the saved checkpoint achieved macro-F1 0.36494; the selected decoder achieved 0.37446. This is a within-checkpoint decoding comparison. Development labels were used for checkpoint and decoder selection, so these are selection scores. Codabench score, submission ID, and acceptance have not yet been recorded.
+The combined development set contains 2,142 sentences. At the saved checkpoint, greedy macro-F1 is 0.36494 and selected-decoder macro-F1 is 0.37446. This compares decoding at one checkpoint, not two independently trained models. Development labels were used for checkpoint and decoder selection; these are selection scores. Codabench score, submission ID, and acceptance have not yet been recorded.
 
 Full scores: [metrics.json](metrics.json). Per-label results: [per_label_metrics.csv](per_label_metrics.csv). Selection evidence: [best_dev_metrics.json](best_dev_metrics.json), [best_selection_metrics.json](best_selection_metrics.json), and [decoding_candidates.json](decoding_candidates.json).
 
@@ -45,10 +67,12 @@ Full scores: [metrics.json](metrics.json). Per-label results: [per_label_metrics
 
 ![Development confusion matrix](confusion_matrix.png)
 
-## Verification and artifact locations
+## Verification and artifacts
 
-The saved [verification.json](verification.json) reports training complete, checkpoint-reload score agreement, train/dev/test separation, valid label vocabulary, test ID/sentence-order checks, and ZIP/JSON round-trip checks. These saved checks do not prove Codabench acceptance. The development aggregate metric and confusion-matrix sentence total were also checked when preparing this documentation.
+The saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, development JSON round-trip, label vocabulary, test ID/order, submission ZIP round-trip, and train/dev/test separation checks. These saved checks do not establish Codabench acceptance.
 
-Checkpoints remain at `MyDrive/cs781_phase3/decoder_full_v1/best_model.pt` and `MyDrive/cs781_phase3/decoder_full_v1/last.pt`. Predictions and `submission.zip` remain in that Drive folder. These paths identify storage locations; they do not grant access.
+Recorded test output coverage: 10 documents and 2,197 sentences. Checkpoints are expected at `MyDrive/cs781_phase3/decoder_full_v1/best_model.pt` and `MyDrive/cs781_phase3/decoder_full_v1/last.pt`, following the original run-folder layout. These Drive paths have not been independently checked here and do not grant access. Predictions and submission ZIPs remain in Drive.
 
-Additional evidence: [history.json](history.json) and [loss_class_weights.json](loss_class_weights.json).
+Training history: [history.json](history.json). Class weights: [loss_class_weights.json](loss_class_weights.json).
+
+[All Phase 3 results](../) · [All results](../../)
