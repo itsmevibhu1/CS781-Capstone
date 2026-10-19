@@ -1,0 +1,162 @@
+{
+  "macro_precision": 0.11894586894586895,
+  "macro_recall": 0.12171707080777412,
+  "macro_f1": 0.11463115272591483,
+  "per_label": {
+    "APP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "support": 14
+    },
+    "RESP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "support": 14
+    },
+    "A.COUNSEL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "support": 17
+    },
+    "R.COUNSEL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 5,
+      "fn": 13,
+      "support": 13
+    },
+    "JUDGE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 12,
+      "fn": 23,
+      "support": 23
+    },
+    "WIT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 23,
+      "support": 23
+    },
+    "AUTH": {
+      "precision": 0.07692307692307693,
+      "recall": 0.008403361344537815,
+      "f1": 0.015151515151515152,
+      "tp": 1,
+      "fp": 12,
+      "fn": 118,
+      "support": 119
+    },
+    "COURT": {
+      "precision": 0.46153846153846156,
+      "recall": 0.5925925925925926,
+      "f1": 0.518918918918919,
+      "tp": 48,
+      "fp": 56,
+      "fn": 33,
+      "support": 81
+    },
+    "STAT": {
+      "precision": 0.2222222222222222,
+      "recall": 0.09859154929577464,
+      "f1": 0.13658536585365855,
+      "tp": 14,
+      "fp": 49,
+      "fn": 128,
+      "support": 142
+    },
+    "PREC": {
+      "precision": 0.027131782945736434,
+      "recall": 0.06481481481481481,
+      "f1": 0.03825136612021858,
+      "tp": 7,
+      "fp": 251,
+      "fn": 101,
+      "support": 108
+    },
+    "DATE": {
+      "precision": 0.6395348837209303,
+      "recall": 0.6962025316455697,
+      "f1": 0.6666666666666666,
+      "tp": 165,
+      "fp": 93,
+      "fn": 72,
+      "support": 237
+    },
+    "CASENO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 97,
+      "fn": 37,
+      "support": 37
+    }
+  },
+  "experiment": "hybrid_lora",
+  "architecture": "hybrid_prefixlm",
+  "method": "lora",
+  "training_complete": true,
+  "smoke_test_cap": null,
+  "optimizer_steps": 273,
+  "training_seconds": 78.92300605773926,
+  "peak_gpu_memory_bytes": 510699008,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 640,
+    "n_head": 10,
+    "d_ff": 2560,
+    "max_len": 1152
+  },
+  "phase1_parameters": 99139200,
+  "selected_phase1_layers": null,
+  "adapter_targets": [
+    "blocks.0.attn.qkv",
+    "blocks.0.attn.proj",
+    "blocks.1.attn.qkv",
+    "blocks.1.attn.proj",
+    "blocks.2.attn.qkv",
+    "blocks.2.attn.proj",
+    "blocks.3.attn.qkv",
+    "blocks.3.attn.proj",
+    "blocks.4.attn.qkv",
+    "blocks.4.attn.proj",
+    "blocks.5.attn.qkv",
+    "blocks.5.attn.proj",
+    "blocks.6.attn.qkv",
+    "blocks.6.attn.proj",
+    "blocks.7.attn.qkv",
+    "blocks.7.attn.proj",
+    "blocks.8.attn.qkv",
+    "blocks.8.attn.proj",
+    "blocks.9.attn.qkv",
+    "blocks.9.attn.proj",
+    "blocks.10.attn.qkv",
+    "blocks.10.attn.proj",
+    "blocks.11.attn.qkv",
+    "blocks.11.attn.proj"
+  ],
+  "total_parameters": 99523865,
+  "trainable_parameters": 384665,
+  "teacher_experiment": null
+}

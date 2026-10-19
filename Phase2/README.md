@@ -46,3 +46,13 @@ python Phase2/validate_phase2_notebook.py
 ```
 
 Sources are linked in the notebook, including the [LoRMA paper](https://aclanthology.org/2025.findings-acl.527/) (LoRMA+, Eq. 8). Keep the course-required LLM declaration with your deliverables.
+
+## Export saved results for the repository
+
+Use the [Phase 1/2 Colab exporter](../tools/Export_Phases1_2_Results_Colab.ipynb) to collect small saved artifacts from Drive in one ZIP. See [export/import instructions](../tools/README.md). Preserve historical run settings and report unavailable records as missing.
+
+## Saved run results
+
+[Browse all 14 Phase 2 runs](../results/phase2/) for saved configurations, strict held-out validation scores, per-label tables, plots, and verification availability. Older runs lack some newer reports. Both partial-encoder runs record zero F1; all run pages preserve measured results, including unsuccessful experiments.
+
+The `v1` and `v3` groups each contain six experiment types, while `v2` and `v4` contain decoder-only variants. Local coverage reports do not establish accepted submissions. Historical code commits and Codabench records remain to be supplied.

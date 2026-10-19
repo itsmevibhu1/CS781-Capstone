@@ -1,0 +1,38 @@
+[
+  {
+    "decoder": {
+      "method": "greedy",
+      "entity_bias": 0.0
+    },
+    "macro_f1": 0.25193177588731325,
+    "macro_precision": 0.2168956791469925,
+    "macro_recall": 0.3343923613943383
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": -0.3
+    },
+    "macro_f1": 0.38662618951701294,
+    "macro_precision": 0.3788943270609593,
+    "macro_recall": 0.41617508828486854
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": 0.0
+    },
+    "macro_f1": 0.38958402737039705,
+    "macro_precision": 0.37037788750696593,
+    "macro_recall": 0.43381909976515715
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": 0.3
+    },
+    "macro_f1": 0.38356243044564536,
+    "macro_precision": 0.3682722068646362,
+    "macro_recall": 0.44375752302354526
+  }
+]

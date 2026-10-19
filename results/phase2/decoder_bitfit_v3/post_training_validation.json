@@ -1,0 +1,242 @@
+{
+  "baseline_greedy_metrics": {
+    "macro_precision": 0.18497322699846275,
+    "macro_recall": 0.2902845435203017,
+    "macro_f1": 0.21892268012057517,
+    "per_label": {
+      "APP": {
+        "precision": 0.04,
+        "recall": 0.14285714285714285,
+        "f1": 0.0625,
+        "tp": 2,
+        "fp": 48,
+        "fn": 12,
+        "support": 14
+      },
+      "RESP": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 41,
+        "fn": 14,
+        "support": 14
+      },
+      "A.COUNSEL": {
+        "precision": 0.10526315789473684,
+        "recall": 0.23529411764705882,
+        "f1": 0.14545454545454545,
+        "tp": 4,
+        "fp": 34,
+        "fn": 13,
+        "support": 17
+      },
+      "R.COUNSEL": {
+        "precision": 0.05128205128205128,
+        "recall": 0.15384615384615385,
+        "f1": 0.07692307692307693,
+        "tp": 2,
+        "fp": 37,
+        "fn": 11,
+        "support": 13
+      },
+      "JUDGE": {
+        "precision": 0.125,
+        "recall": 0.34782608695652173,
+        "f1": 0.1839080459770115,
+        "tp": 8,
+        "fp": 56,
+        "fn": 15,
+        "support": 23
+      },
+      "WIT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 13,
+        "fn": 23,
+        "support": 23
+      },
+      "AUTH": {
+        "precision": 0.23880597014925373,
+        "recall": 0.40336134453781514,
+        "f1": 0.3,
+        "tp": 48,
+        "fp": 153,
+        "fn": 71,
+        "support": 119
+      },
+      "COURT": {
+        "precision": 0.4765625,
+        "recall": 0.7530864197530864,
+        "f1": 0.583732057416268,
+        "tp": 61,
+        "fp": 67,
+        "fn": 20,
+        "support": 81
+      },
+      "STAT": {
+        "precision": 0.39285714285714285,
+        "recall": 0.3873239436619718,
+        "f1": 0.3900709219858156,
+        "tp": 55,
+        "fp": 85,
+        "fn": 87,
+        "support": 142
+      },
+      "PREC": {
+        "precision": 0.03187250996015936,
+        "recall": 0.07407407407407407,
+        "f1": 0.04456824512534819,
+        "tp": 8,
+        "fp": 243,
+        "fn": 100,
+        "support": 108
+      },
+      "DATE": {
+        "precision": 0.7323943661971831,
+        "recall": 0.8776371308016878,
+        "f1": 0.7984644913627639,
+        "tp": 208,
+        "fp": 76,
+        "fn": 29,
+        "support": 237
+      },
+      "CASENO": {
+        "precision": 0.02564102564102564,
+        "recall": 0.10810810810810811,
+        "f1": 0.04145077720207254,
+        "tp": 4,
+        "fp": 152,
+        "fn": 33,
+        "support": 37
+      }
+    }
+  },
+  "selected_metrics": {
+    "macro_precision": 0.3340626163180207,
+    "macro_recall": 0.4182135008833259,
+    "macro_f1": 0.3620038317872604,
+    "per_label": {
+      "APP": {
+        "precision": 0.23076923076923078,
+        "recall": 0.42857142857142855,
+        "f1": 0.3,
+        "tp": 6,
+        "fp": 20,
+        "fn": 8,
+        "support": 14
+      },
+      "RESP": {
+        "precision": 0.375,
+        "recall": 0.42857142857142855,
+        "f1": 0.4,
+        "tp": 6,
+        "fp": 10,
+        "fn": 8,
+        "support": 14
+      },
+      "A.COUNSEL": {
+        "precision": 0.3125,
+        "recall": 0.29411764705882354,
+        "f1": 0.30303030303030304,
+        "tp": 5,
+        "fp": 11,
+        "fn": 12,
+        "support": 17
+      },
+      "R.COUNSEL": {
+        "precision": 0.16,
+        "recall": 0.3076923076923077,
+        "f1": 0.21052631578947367,
+        "tp": 4,
+        "fp": 21,
+        "fn": 9,
+        "support": 13
+      },
+      "JUDGE": {
+        "precision": 0.2926829268292683,
+        "recall": 0.5217391304347826,
+        "f1": 0.375,
+        "tp": 12,
+        "fp": 29,
+        "fn": 11,
+        "support": 23
+      },
+      "WIT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 3,
+        "fn": 23,
+        "support": 23
+      },
+      "AUTH": {
+        "precision": 0.32051282051282054,
+        "recall": 0.42016806722689076,
+        "f1": 0.36363636363636365,
+        "tp": 50,
+        "fp": 106,
+        "fn": 69,
+        "support": 119
+      },
+      "COURT": {
+        "precision": 0.5603448275862069,
+        "recall": 0.8024691358024691,
+        "f1": 0.6598984771573604,
+        "tp": 65,
+        "fp": 51,
+        "fn": 16,
+        "support": 81
+      },
+      "STAT": {
+        "precision": 0.5670103092783505,
+        "recall": 0.3873239436619718,
+        "f1": 0.4602510460251046,
+        "tp": 55,
+        "fp": 42,
+        "fn": 87,
+        "support": 142
+      },
+      "PREC": {
+        "precision": 0.10256410256410256,
+        "recall": 0.1111111111111111,
+        "f1": 0.10666666666666667,
+        "tp": 12,
+        "fp": 105,
+        "fn": 96,
+        "support": 108
+      },
+      "DATE": {
+        "precision": 0.8925619834710744,
+        "recall": 0.9113924050632911,
+        "f1": 0.9018789144050104,
+        "tp": 216,
+        "fp": 26,
+        "fn": 21,
+        "support": 237
+      },
+      "CASENO": {
+        "precision": 0.19480519480519481,
+        "recall": 0.40540540540540543,
+        "f1": 0.2631578947368421,
+        "tp": 15,
+        "fp": 62,
+        "fn": 22,
+        "support": 37
+      }
+    }
+  },
+  "selected_decoder": {
+    "method": "viterbi",
+    "entity_bias": 0.0
+  },
+  "checkpoint_reload_matches_recorded_scores": true,
+  "validation_schema_and_ids_passed": true,
+  "json_roundtrip_passed": true,
+  "gold_support_counts_verified": true,
+  "validation_documents": 10,
+  "score_scope": "held-out validation used for checkpoint/decoder selection, not an unbiased test estimate"
+}

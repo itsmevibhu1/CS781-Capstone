@@ -1,0 +1,2 @@
+experiment,architecture,method,macro_f1,macro_precision,macro_recall,total_parameters,trainable_parameters,training_seconds,training_complete
+decoder_full,decoder_only,full,0.48044758113463737,0.46459321815250365,0.5222090880521104,110437657,110437657,158.5680251121521,True

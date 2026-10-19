@@ -1,0 +1,142 @@
+{
+  "macro_precision": 0.0,
+  "macro_recall": 0.0,
+  "macro_f1": 0.0,
+  "per_label": {
+    "APP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "support": 14
+    },
+    "RESP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "support": 14
+    },
+    "A.COUNSEL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "support": 17
+    },
+    "R.COUNSEL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 13,
+      "support": 13
+    },
+    "JUDGE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 23,
+      "support": 23
+    },
+    "WIT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 23,
+      "support": 23
+    },
+    "AUTH": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 119,
+      "support": 119
+    },
+    "COURT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 81,
+      "support": 81
+    },
+    "STAT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 142,
+      "support": 142
+    },
+    "PREC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 108,
+      "support": 108
+    },
+    "DATE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 237,
+      "support": 237
+    },
+    "CASENO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 37,
+      "support": 37
+    }
+  },
+  "baseline_macro_f1": 0.0,
+  "selected_decoder": {
+    "method": "greedy",
+    "entity_bias": 0.0
+  },
+  "experiment": "encoder_partial",
+  "architecture": "encoder_decoder",
+  "method": "partial",
+  "training_complete": true,
+  "smoke_test_cap": null,
+  "optimizer_steps": 273,
+  "training_seconds": 18.051424503326416,
+  "peak_gpu_memory_bytes": 544159232,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_enc_layer": 6,
+    "n_dec_layer": 6,
+    "d_model": 768,
+    "n_head": 8,
+    "d_ff": 3072
+  },
+  "phase1_parameters": 123762176,
+  "selected_phase1_layers": null,
+  "adapter_targets": [],
+  "total_parameters": 67105817,
+  "trainable_parameters": 14190361,
+  "teacher_experiment": null
+}

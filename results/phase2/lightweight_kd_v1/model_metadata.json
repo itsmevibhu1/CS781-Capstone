@@ -1,0 +1,24 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 3,
+    "d_ff": 2176,
+    "max_len": 1024
+  },
+  "phase1_parameters": 102451968,
+  "selected_phase1_layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "adapter_targets": [],
+  "total_parameters": 63533593,
+  "trainable_parameters": 63533593,
+  "teacher_experiment": "decoder_full"
+}

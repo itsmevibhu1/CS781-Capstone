@@ -1,0 +1,142 @@
+{
+  "macro_precision": 0.3340626163180207,
+  "macro_recall": 0.4182135008833259,
+  "macro_f1": 0.3620038317872604,
+  "per_label": {
+    "APP": {
+      "precision": 0.23076923076923078,
+      "recall": 0.42857142857142855,
+      "f1": 0.3,
+      "tp": 6,
+      "fp": 20,
+      "fn": 8,
+      "support": 14
+    },
+    "RESP": {
+      "precision": 0.375,
+      "recall": 0.42857142857142855,
+      "f1": 0.4,
+      "tp": 6,
+      "fp": 10,
+      "fn": 8,
+      "support": 14
+    },
+    "A.COUNSEL": {
+      "precision": 0.3125,
+      "recall": 0.29411764705882354,
+      "f1": 0.30303030303030304,
+      "tp": 5,
+      "fp": 11,
+      "fn": 12,
+      "support": 17
+    },
+    "R.COUNSEL": {
+      "precision": 0.16,
+      "recall": 0.3076923076923077,
+      "f1": 0.21052631578947367,
+      "tp": 4,
+      "fp": 21,
+      "fn": 9,
+      "support": 13
+    },
+    "JUDGE": {
+      "precision": 0.2926829268292683,
+      "recall": 0.5217391304347826,
+      "f1": 0.375,
+      "tp": 12,
+      "fp": 29,
+      "fn": 11,
+      "support": 23
+    },
+    "WIT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 23,
+      "support": 23
+    },
+    "AUTH": {
+      "precision": 0.32051282051282054,
+      "recall": 0.42016806722689076,
+      "f1": 0.36363636363636365,
+      "tp": 50,
+      "fp": 106,
+      "fn": 69,
+      "support": 119
+    },
+    "COURT": {
+      "precision": 0.5603448275862069,
+      "recall": 0.8024691358024691,
+      "f1": 0.6598984771573604,
+      "tp": 65,
+      "fp": 51,
+      "fn": 16,
+      "support": 81
+    },
+    "STAT": {
+      "precision": 0.5670103092783505,
+      "recall": 0.3873239436619718,
+      "f1": 0.4602510460251046,
+      "tp": 55,
+      "fp": 42,
+      "fn": 87,
+      "support": 142
+    },
+    "PREC": {
+      "precision": 0.10256410256410256,
+      "recall": 0.1111111111111111,
+      "f1": 0.10666666666666667,
+      "tp": 12,
+      "fp": 105,
+      "fn": 96,
+      "support": 108
+    },
+    "DATE": {
+      "precision": 0.8925619834710744,
+      "recall": 0.9113924050632911,
+      "f1": 0.9018789144050104,
+      "tp": 216,
+      "fp": 26,
+      "fn": 21,
+      "support": 237
+    },
+    "CASENO": {
+      "precision": 0.19480519480519481,
+      "recall": 0.40540540540540543,
+      "f1": 0.2631578947368421,
+      "tp": 15,
+      "fp": 62,
+      "fn": 22,
+      "support": 37
+    }
+  },
+  "baseline_macro_f1": 0.21892268012057517,
+  "selected_decoder": {
+    "method": "viterbi",
+    "entity_bias": 0.0
+  },
+  "experiment": "decoder_bitfit",
+  "architecture": "decoder_only",
+  "method": "bitfit",
+  "training_complete": true,
+  "smoke_test_cap": null,
+  "optimizer_steps": 273,
+  "training_seconds": 45.919848680496216,
+  "peak_gpu_memory_bytes": 575930880,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "n_embd": 768,
+    "n_head": 12,
+    "d_ff": 3072,
+    "max_len": 1024
+  },
+  "phase1_parameters": 110418432,
+  "selected_phase1_layers": null,
+  "adapter_targets": [],
+  "total_parameters": 110437657,
+  "trainable_parameters": 121369,
+  "teacher_experiment": null
+}

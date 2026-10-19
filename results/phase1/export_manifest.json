@@ -1,0 +1,85 @@
+{
+  "exported_at_utc": "2026-10-19T07:02:28.934139+00:00",
+  "source_folder": "cs781_phase1",
+  "status": "runs_found",
+  "runs": [
+    {
+      "folder": "run_decoder_only",
+      "included": [
+        "loss_curve.png"
+      ],
+      "missing_artifacts": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "environment.json",
+        "training_curves.png",
+        "config.json",
+        "training_config.json",
+        "evaluation_metrics.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "run_encoder_decoder",
+      "included": [
+        "loss_curve.png"
+      ],
+      "missing_artifacts": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "environment.json",
+        "training_curves.png",
+        "config.json",
+        "training_config.json",
+        "evaluation_metrics.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "run_hybrid_prefixlm",
+      "included": [
+        "loss_curve.png"
+      ],
+      "missing_artifacts": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "environment.json",
+        "training_curves.png",
+        "config.json",
+        "training_config.json",
+        "evaluation_metrics.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "run_lightweight",
+      "included": [
+        "loss_curve.png"
+      ],
+      "missing_artifacts": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "environment.json",
+        "training_curves.png",
+        "config.json",
+        "training_config.json",
+        "evaluation_metrics.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    }
+  ],
+  "phase_files": [],
+  "notes": "Saved artifacts only. No training, checkpoint loading, or Codabench verification performed."
+}

@@ -1,0 +1,43 @@
+{
+  "entity_labels": [
+    "APP",
+    "RESP",
+    "A.COUNSEL",
+    "R.COUNSEL",
+    "JUDGE",
+    "WIT",
+    "AUTH",
+    "COURT",
+    "STAT",
+    "PREC",
+    "DATE",
+    "CASENO"
+  ],
+  "bio_labels": [
+    "O",
+    "B-APP",
+    "I-APP",
+    "B-RESP",
+    "I-RESP",
+    "B-A.COUNSEL",
+    "I-A.COUNSEL",
+    "B-R.COUNSEL",
+    "I-R.COUNSEL",
+    "B-JUDGE",
+    "I-JUDGE",
+    "B-WIT",
+    "I-WIT",
+    "B-AUTH",
+    "I-AUTH",
+    "B-COURT",
+    "I-COURT",
+    "B-STAT",
+    "I-STAT",
+    "B-PREC",
+    "I-PREC",
+    "B-DATE",
+    "I-DATE",
+    "B-CASENO",
+    "I-CASENO"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "decoder": {
+      "method": "greedy",
+      "entity_bias": 0.0
+    },
+    "macro_f1": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": -0.3
+    },
+    "macro_f1": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": 0.0
+    },
+    "macro_f1": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0
+  },
+  {
+    "decoder": {
+      "method": "viterbi",
+      "entity_bias": 0.3
+    },
+    "macro_f1": 0.0,
+    "macro_precision": 0.0,
+    "macro_recall": 0.0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "validation_checks_passed": true,
+  "prediction_ids_and_offsets_passed": true,
+  "test_documents": 35,
+  "predicted_entities": 4543,
+  "zip_root_and_json_passed": true,
+  "official_test_score": null
+}

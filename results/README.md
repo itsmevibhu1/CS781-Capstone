@@ -1,11 +1,15 @@
 # Results
 
-Browse by phase, then open an experiment folder for its method, configuration, scores, plots, and verification artifacts.
+Browse by phase, then open a run for its saved evidence and documentation.
 
-| Phase | Task | Documented runs | Results |
+| Phase | Task | Recorded folders | Results |
 | --- | --- | ---: | --- |
-| 3 | Rhetorical role prediction | 8 | [Phase 3 results](phase3/) |
+| 1 | Legal language model pretraining | 4 | [Phase 1 plots and missing records](phase1/) |
+| 2 | Legal named entity recognition | 14 | [Phase 2 settings and validation results](phase2/) |
+| 3 | Rhetorical role prediction | 8 | [Phase 3 settings and development results](phase3/) |
 
-Other phases will be added as their result records are prepared. The cross-phase [experiment ledger](../experiments/runs.csv) links each recorded run to its configuration and expected Drive checkpoint path.
+Phase 1 currently has loss plots only; exact historical configurations and evaluation scores remain unavailable. Phase 2 and Phase 3 include saved configurations and selection metrics. Scores from different tasks and split definitions are not directly comparable.
 
-Scores shown here are development selection scores. Codabench results and acceptance remain unrecorded. Model weights, predictions, and large archives stay in Google Drive. The README for each run describes what was exported and what is still unknown.
+The [experiment ledger](../experiments/runs.csv) links folders to saved configurations where available and expected Drive checkpoint paths. Codabench scores, IDs, and acceptance are not yet recorded. Folder counts do not prove distinct accepted submissions.
+
+Weights, prediction files, datasets, caches, and large archives stay in Drive. Each phase index explains the completeness of its exported evidence.
