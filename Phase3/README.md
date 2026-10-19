@@ -67,4 +67,4 @@ The script requires PyTorch, tokenizers, numpy, tqdm, matplotlib, nbformat, and 
 
 ## Saved run results
 
-- [decoder_full_v1](../results/phase3/decoder_full_v1/README.md): full fine-tuning configuration, development scores, plots, and saved verification.
+[Browse Phase 3 results](../results/phase3/) for the experiment index, configurations, development scores, plots, and saved verification.

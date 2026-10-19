@@ -59,6 +59,6 @@ Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VAL
 
 Keep competition solutions private and provide instructor access according to course instructions.
 
-## Documented runs
+## Results
 
-- [Phase 3: decoder_full_v1](results/phase3/decoder_full_v1/README.md): saved configuration, development results, plots, and verification.
+[Browse results by phase](results/). Each phase contains an index of its documented experiments.
