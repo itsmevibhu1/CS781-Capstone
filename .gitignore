@@ -1,0 +1,62 @@
+# Local tool configuration and credentials
+.agents/
+.aws/
+.codex/
+.env
+.env.*
+!.env.example
+credentials*.json
+service-account*.json
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+
+# Model weights, training states, and large archives live in Drive.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.bin
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+checkpoints/
+
+# Local run directories contain predictions and training artifacts.
+/run_decoder_only/
+/run_encoder_decoder/
+/run_hybrid_prefixlm/
+/run_lightweight/
+/cs781_phase1/
+/cs781_phase2/
+/cs781_phase3/
+data/
+datasets/
+
+# Keep the main source notebooks; executed copies remain local.
+*_exe.ipynb
+
+# Course-provided reference documents remain local.
+/Capstone Document_edited.pdf
+/CS781_Phase1_Starter_Code.ipynb
+/CS781_Phase1_Starter_Code_README.docx
+
+# LaTeX build intermediates
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
