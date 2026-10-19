@@ -1,1 +1,2 @@
 phase,experiment_id,run_tag,architecture,adaptation,code_commit,config_path,dev_metric_name,dev_metric_value,codabench_metric_name,codabench_metric_value,codabench_submission_id,submission_status,checkpoint_drive_path,notes
+3,decoder_full,v1,decoder_only,full,,results/phase3/decoder_full_v1/run_config.json,combined_dev_macro_f1,0.37446238311460817,,,,,MyDrive/cs781_phase3/decoder_full_v1/best_model.pt,Saved verification reports training complete; dev used for checkpoint/decoder selection; original code commit and Codabench submission not yet recorded.

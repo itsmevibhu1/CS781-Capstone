@@ -1,0 +1,58 @@
+[
+  {
+    "config": {
+      "transition_strength": 0.0,
+      "prior_correction": 0.0
+    },
+    "macro_f1": 0.36494227842522026
+  },
+  {
+    "config": {
+      "transition_strength": 0.0,
+      "prior_correction": 0.25
+    },
+    "macro_f1": 0.36310416591173467
+  },
+  {
+    "config": {
+      "transition_strength": 0.1,
+      "prior_correction": 0.0
+    },
+    "macro_f1": 0.3681603378015061
+  },
+  {
+    "config": {
+      "transition_strength": 0.1,
+      "prior_correction": 0.25
+    },
+    "macro_f1": 0.3656701842059883
+  },
+  {
+    "config": {
+      "transition_strength": 0.3,
+      "prior_correction": 0.0
+    },
+    "macro_f1": 0.37112387425233656
+  },
+  {
+    "config": {
+      "transition_strength": 0.3,
+      "prior_correction": 0.25
+    },
+    "macro_f1": 0.3714082998393302
+  },
+  {
+    "config": {
+      "transition_strength": 0.6,
+      "prior_correction": 0.0
+    },
+    "macro_f1": 0.36122166233119124
+  },
+  {
+    "config": {
+      "transition_strength": 0.6,
+      "prior_correction": 0.25
+    },
+    "macro_f1": 0.37446238311460817
+  }
+]

@@ -64,3 +64,7 @@ python Phase3/validate_phase3_notebook.py
 ```
 
 The script requires PyTorch, tokenizers, numpy, tqdm, matplotlib, nbformat, and huggingface_hub. It uses your local Phase 1 checkpoints and temporary synthetic train/dev/test data; it does not authenticate or download gated course data. Paper references for LoRA, rsLoRA, LoRMA, IA³ and distillation are linked in the notebook. Keep the required LLM declaration and cite the reused code/references.
+
+## Saved run results
+
+- [decoder_full_v1](../results/phase3/decoder_full_v1/README.md): full fine-tuning configuration, development scores, plots, and saved verification.

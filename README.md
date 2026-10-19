@@ -1,6 +1,6 @@
 # CS781: Legal NLP Capstone
 
-Individual capstone work by Vibhu Yadav (231145). This repository also contains earlier CS781 assignments; the capstone entry points are listed below.
+Individual capstone work by Vibhu Yadav (231145). The capstone entry points are listed below.
 
 ## Phase entry points
 
@@ -38,7 +38,7 @@ Checkpoints, datasets, prediction archives, and executed notebook copies are exc
 
 ## Experiment records and results
 
-[experiments/runs.csv](experiments/runs.csv) is the ledger for actual runs and submissions. It starts empty: fill it from saved run artifacts and Codabench records, rather than reconstructing scores from memory. Use repository-relative paths for configurations and exact Drive paths for checkpoints. Record the code commit used when known; leave unavailable information blank.
+[experiments/runs.csv](experiments/runs.csv) is the ledger for actual runs and submissions. Fill it from saved run artifacts and Codabench records, rather than reconstructing scores from memory. Use repository-relative paths for configurations and exact Drive paths for checkpoints. Record the code commit used when known; leave unavailable information blank.
 
 Keep development and Codabench scores separate. Development scores used for checkpoint or decoder selection are selection scores. Synthetic validation metrics do not measure capstone performance.
 
@@ -58,3 +58,7 @@ Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VAL
 - Cite papers and reused code, and complete the course-required LLM declaration.
 
 Keep competition solutions private and provide instructor access according to course instructions.
+
+## Documented runs
+
+- [Phase 3: decoder_full_v1](results/phase3/decoder_full_v1/README.md): saved configuration, development results, plots, and verification.
