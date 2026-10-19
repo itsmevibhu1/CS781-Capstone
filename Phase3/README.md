@@ -1,6 +1,6 @@
 # Run Phase 3 in Colab
 
-Upload [CS781_Phase3_Solution_Colab.ipynb](../CS781_Phase3_Solution_Colab.ipynb) to Colab, select a GPU runtime, add a secret named **HF** containing only your `hf_...` access token, and run all cells. The token is never printed.
+Upload [CS781_Phase3_Solution_Colab.ipynb](CS781_Phase3_Solution_Colab.ipynb) to Colab, select a GPU runtime, add a secret named **HF** containing only your `hf_...` access token, and run all cells. The token is never printed.
 
 The notebook mounts Drive, reads **your Phase 1** tokenizer/weights from `MyDrive/cs781_phase1/`, and saves to `MyDrive/cs781_phase3/`. It does not use Phase 2 weights: the Phase 3 document requires every experiment to start from Phase 1.
 

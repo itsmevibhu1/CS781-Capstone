@@ -6,7 +6,7 @@ Rhetorical role prediction for CL and IT documents using Knowledge distillation 
 
 A smaller student uses the recorded subset of Phase 1 lightweight blocks. Its backbone and classifier are trainable using supervised labels and teacher-logit distillation. The recorded teacher identifier is shown below; the historical teacher checkpoint hash was not included in the exported artifacts.
 
-The current [Phase 3 notebook](../../../CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
+The current [Phase 3 notebook](../../../Phase3/CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
 
 The original training code commit was not recorded in these artifacts. The linked notebook is the current repository version; its exact correspondence with the historical training code still needs confirmation.
 

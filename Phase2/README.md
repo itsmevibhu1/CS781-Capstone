@@ -1,6 +1,6 @@
 # Phase 2 notebook
 
-Open `../CS781_Phase2_Solution_Colab.ipynb` in Google Colab, select a GPU runtime, and add a Colab secret named **HF** with access to the course dataset.
+Open [CS781_Phase2_Solution_Colab.ipynb](CS781_Phase2_Solution_Colab.ipynb) in Google Colab, select a GPU runtime, and add a Colab secret named **HF** with access to the course dataset.
 
 The notebook mounts Drive. It reads the existing tokenizer and model weights from `MyDrive/cs781_phase1/` and writes all outputs to `MyDrive/cs781_phase2/`.
 
@@ -46,10 +46,6 @@ python Phase2/validate_phase2_notebook.py
 ```
 
 Sources are linked in the notebook, including the [LoRMA paper](https://aclanthology.org/2025.findings-acl.527/) (LoRMA+, Eq. 8). Keep the course-required LLM declaration with your deliverables.
-
-## Export saved results for the repository
-
-Use the [Phase 1/2 Colab exporter](../tools/Export_Phases1_2_Results_Colab.ipynb) to collect small saved artifacts from Drive in one ZIP. See [export/import instructions](../tools/README.md). Preserve historical run settings and report unavailable records as missing.
 
 ## Saved run results
 

@@ -5,7 +5,7 @@ from pathlib import Path
 import textwrap
 
 ROOT = Path(__file__).resolve().parents[1]
-phase1 = json.loads((ROOT / 'CS781_Phase1_Solution_Colab.ipynb').read_text())
+phase1 = json.loads((ROOT / 'Phase1' / 'CS781_Phase1_Solution_Colab.ipynb').read_text())
 cells = []
 def md(s):
     cells.append({'cell_type': 'markdown', 'metadata': {}, 'source': textwrap.dedent(s).strip().splitlines(True)})
@@ -1315,6 +1315,6 @@ nb = {'cells': cells, 'metadata': {'kernelspec': {'display_name': 'Python 3', 'l
       'nbformat': 4, 'nbformat_minor': 5}
 for i, cell in enumerate(cells):
     cell['id'] = f'phase2-{i:02d}'
-output = ROOT / 'CS781_Phase2_Solution_Colab.ipynb'
+output = ROOT / 'Phase2' / 'CS781_Phase2_Solution_Colab.ipynb'
 output.write_text(json.dumps(nb, ensure_ascii=False, indent=1) + '\n')
 print(f'Created {output} with {len(cells)} cells')

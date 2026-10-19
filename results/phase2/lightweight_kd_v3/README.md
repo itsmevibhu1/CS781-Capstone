@@ -6,7 +6,7 @@ Legal named entity recognition using Knowledge distillation. Values below come f
 
 The smaller lightweight student uses the recorded subset of Phase 1 blocks and trains its backbone and BIO head with supervised loss and teacher-logit distillation. The saved teacher identifier is documented below; a historical teacher checkpoint hash was not exported.
 
-The [current notebook](../../../CS781_Phase2_Solution_Colab.ipynb) implements BPE tokenization with character offsets, overlapping windows, a BIO token-classification head, document-level prediction merging, and strict entity-span evaluation. See the [phase instructions](../../../Phase2/README.md). It initializes from Phase 1 weights. The original training code commit was not exported, so exact correspondence with the linked current implementation remains to be confirmed.
+The [current notebook](../../../Phase2/CS781_Phase2_Solution_Colab.ipynb) implements BPE tokenization with character offsets, overlapping windows, a BIO token-classification head, document-level prediction merging, and strict entity-span evaluation. See the [phase instructions](../../../Phase2/README.md). It initializes from Phase 1 weights. The original training code commit was not exported, so exact correspondence with the linked current implementation remains to be confirmed.
 
 ## Saved configuration
 

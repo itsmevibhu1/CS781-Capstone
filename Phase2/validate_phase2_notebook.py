@@ -8,7 +8,7 @@ import tempfile
 os.environ.setdefault('MPLCONFIGDIR', '/tmp/cs781-phase2-matplotlib')
 os.environ.setdefault('MPLBACKEND', 'Agg')
 ROOT = Path(__file__).resolve().parents[1]
-notebook = json.loads((ROOT / 'CS781_Phase2_Solution_Colab.ipynb').read_text())
+notebook = json.loads((ROOT / 'Phase2' / 'CS781_Phase2_Solution_Colab.ipynb').read_text())
 import nbformat
 nbformat.validate(nbformat.from_dict(notebook))
 namespace = {'__name__': '__phase2_test__'}

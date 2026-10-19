@@ -1,6 +1,6 @@
 # Phase 1: Legal language model pretraining
 
-The primary entry point is [CS781_Phase1_Solution_Colab.ipynb](../CS781_Phase1_Solution_Colab.ipynb). It contains data loading, BPE tokenization, four model definitions, training, generation, and submission packaging.
+The primary entry point is [CS781_Phase1_Solution_Colab.ipynb](CS781_Phase1_Solution_Colab.ipynb). It contains data loading, BPE tokenization, four model definitions, training, generation, and submission packaging.
 
 ## Architecture options
 
@@ -32,10 +32,6 @@ The local [bpe_tokenizer/](../bpe_tokenizer/) contains the saved vocabulary and 
 Populate [the experiment ledger](../experiments/runs.csv) from actual artifacts: training settings, code version if available, checkpoint path, evaluation results, and Codabench submission IDs. Add selected loss plots and measured comparisons. Local model files alone do not establish leaderboard scores or submission acceptance.
 
 `CS781_Phase1_FourArchitectures.ipynb` is an additional notebook retained in this folder. Before attributing a submitted result to either notebook, verify which version and settings produced that run.
-
-## Export saved results for the repository
-
-Use the [Phase 1/2 Colab exporter](../tools/Export_Phases1_2_Results_Colab.ipynb) to collect small saved artifacts from Drive in one ZIP. See [export/import instructions](../tools/README.md). Preserve historical run settings and report unavailable records as missing.
 
 ## Saved run results
 

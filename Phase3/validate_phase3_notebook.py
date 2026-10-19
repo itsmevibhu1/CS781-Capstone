@@ -4,7 +4,7 @@ from pathlib import Path
 os.environ.setdefault('MPLBACKEND','Agg')
 os.environ.setdefault('MPLCONFIGDIR','/tmp/cs781-phase3-mpl')
 ROOT=Path(__file__).resolve().parents[1]
-n=json.loads((ROOT/'CS781_Phase3_Solution_Colab.ipynb').read_text())
+n=json.loads((ROOT/'Phase3'/'CS781_Phase3_Solution_Colab.ipynb').read_text())
 import nbformat
 nbformat.validate(nbformat.from_dict(n))
 ns={'__name__':'phase3_offline_validation'}

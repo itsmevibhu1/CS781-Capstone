@@ -6,9 +6,9 @@ Individual capstone work by Vibhu Yadav (231145). The capstone entry points are 
 
 | Phase | Task | Main notebook | Documentation |
 | --- | --- | --- | --- |
-| 1 | Legal language model pretraining | [Phase 1 notebook](CS781_Phase1_Solution_Colab.ipynb) | [Phase 1 README](Phase1/README.md) |
-| 2 | Legal named entity recognition | [Phase 2 notebook](CS781_Phase2_Solution_Colab.ipynb) | [Phase 2 README](Phase2/README.md) |
-| 3 | Rhetorical role prediction | [Phase 3 notebook](CS781_Phase3_Solution_Colab.ipynb) | [Phase 3 README](Phase3/README.md) |
+| 1 | Legal language model pretraining | [Phase 1 notebook](Phase1/CS781_Phase1_Solution_Colab.ipynb) | [Phase 1 README](Phase1/README.md) |
+| 2 | Legal named entity recognition | [Phase 2 notebook](Phase2/CS781_Phase2_Solution_Colab.ipynb) | [Phase 2 README](Phase2/README.md) |
+| 3 | Rhetorical role prediction | [Phase 3 notebook](Phase3/CS781_Phase3_Solution_Colab.ipynb) | [Phase 3 README](Phase3/README.md) |
 
 Phase 1 implements decoder-only, encoder-decoder, hybrid Prefix-LM, and lightweight architectures trained from scratch. Phases 2 and 3 adapt Phase 1 checkpoints using the methods documented in their READMEs. The available code is not evidence that every experiment has finished or been accepted on Codabench.
 
@@ -44,7 +44,7 @@ Keep development and Codabench scores separate. Development scores used for chec
 
 ## Supporting code and validation
 
-`Phase2/` and `Phase3/` contain notebook builders and offline validation scripts. Run builders from this repository layout because they reuse the root Phase 1 notebook. Validation scripts also require local Phase 1 weights and the dependencies listed in the phase READMEs.
+`Phase2/` and `Phase3/` contain notebook builders and offline validation scripts. Run builders from this repository layout because they reuse the Phase 1 notebook in `Phase1/`. Validation scripts also require local Phase 1 weights and the dependencies listed in the phase READMEs.
 
 Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VALIDATION.md). These describe prior offline checks and their limits; they do not establish current Colab training results or Codabench acceptance.
 
@@ -62,7 +62,3 @@ Keep competition solutions private and provide instructor access according to co
 ## Results
 
 [Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1 historical settings and scores remain unrecorded; Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
-
-## Exporting saved results
-
-The [result export tools](tools/README.md) collect Phase 1 and Phase 2 artifacts from Drive without downloading checkpoints or rerunning training.

@@ -6,7 +6,7 @@ Rhetorical role prediction for CL and IT documents using IA³ with the Phase 1 e
 
 The encoder from the Phase 1 encoder-decoder model is used for classification. The backbone weights are frozen; IA³ key/value and feed-forward scaling vectors and the classification head are trained. The Phase 1 parameter count describes the full original model, while the task model uses its encoder.
 
-The current [Phase 3 notebook](../../../CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
+The current [Phase 3 notebook](../../../Phase3/CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
 
 The original training code commit was not recorded in these artifacts. The linked notebook is the current repository version; its exact correspondence with the historical training code still needs confirmation.
 

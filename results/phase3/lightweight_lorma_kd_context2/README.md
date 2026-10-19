@@ -6,7 +6,7 @@ Rhetorical role prediction for CL and IT documents using LoRMA+ with the Phase 1
 
 The backbone weights are frozen; attention projections use the LoRMA+ multiplicative low-rank adaptation implemented in the notebook, together with a trainable classification head.
 
-The current [Phase 3 notebook](../../../CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
+The current [Phase 3 notebook](../../../Phase3/CS781_Phase3_Solution_Colab.ipynb) contains data loading, BPE tokenization, context-aware sentence inputs, classification, training, and prediction. See the [phase instructions](../../../Phase3/README.md). All downstream runs initialize from Phase 1 rather than Phase 2 weights.
 
 The original training code commit was not recorded in these artifacts. The linked notebook is the current repository version; its exact correspondence with the historical training code still needs confirmation.
 

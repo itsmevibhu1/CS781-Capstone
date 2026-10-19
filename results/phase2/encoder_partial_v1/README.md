@@ -6,7 +6,7 @@ Legal named entity recognition using Partial fine-tuning. Values below come from
 
 The current implementation uses the Phase 1 encoder-decoder encoder, adapting its last two encoder layers and final normalization together with the BIO classification head. Exact historical trainable names were not exported; parameter counts come from the saved metadata.
 
-The [current notebook](../../../CS781_Phase2_Solution_Colab.ipynb) implements BPE tokenization with character offsets, overlapping windows, a BIO token-classification head, document-level prediction merging, and strict entity-span evaluation. See the [phase instructions](../../../Phase2/README.md). It initializes from Phase 1 weights. The original training code commit was not exported, so exact correspondence with the linked current implementation remains to be confirmed.
+The [current notebook](../../../Phase2/CS781_Phase2_Solution_Colab.ipynb) implements BPE tokenization with character offsets, overlapping windows, a BIO token-classification head, document-level prediction merging, and strict entity-span evaluation. See the [phase instructions](../../../Phase2/README.md). It initializes from Phase 1 weights. The original training code commit was not exported, so exact correspondence with the linked current implementation remains to be confirmed.
 
 ## Saved configuration
 

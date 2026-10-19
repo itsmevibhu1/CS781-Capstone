@@ -2,7 +2,7 @@
 import ast, json, textwrap
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-p2=json.loads((ROOT/'CS781_Phase2_Solution_Colab.ipynb').read_text())
+p2=json.loads((ROOT/'Phase2'/'CS781_Phase2_Solution_Colab.ipynb').read_text())
 cells=[]
 def md(s):cells.append(dict(cell_type='markdown',metadata={},source=textwrap.dedent(s).strip().splitlines(True)))
 def code(s):cells.append(dict(cell_type='code',metadata={},execution_count=None,outputs=[],source=textwrap.dedent(s).strip().splitlines(True)))
@@ -950,6 +950,6 @@ of state-of-the-art performance. Inspect actual dev errors before deciding which
 for i,c in enumerate(cells):c['id']=f'phase3-{i:02d}'
 nb={'cells':cells,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},
     'language_info':{'name':'python'},'colab':{'name':'CS781_Phase3_Solution_Colab.ipynb','provenance':[]}},'nbformat':4,'nbformat_minor':5}
-output=ROOT/'CS781_Phase3_Solution_Colab.ipynb'
+output=ROOT/'Phase3'/'CS781_Phase3_Solution_Colab.ipynb'
 output.write_text(json.dumps(nb,ensure_ascii=False,indent=1)+'\n')
 print('Created',output,'cells:',len(cells))

@@ -10,7 +10,7 @@ The image is evidence of a saved plot; it does not independently establish train
 
 ## Implementation and reproduction
 
-The current [Phase 1 notebook](../../../CS781_Phase1_Solution_Colab.ipynb) defines this architecture under `ARCHITECTURE = "encoder_decoder"`, along with the data/tokenizer/training/generation pipeline. See the [phase instructions](../../../Phase1/README.md). This is implementation documentation, not proof that current notebook defaults match the historical run.
+The current [Phase 1 notebook](../../../Phase1/CS781_Phase1_Solution_Colab.ipynb) defines this architecture under `ARCHITECTURE = "encoder_decoder"`, along with the data/tokenizer/training/generation pipeline. See the [phase instructions](../../../Phase1/README.md). This is implementation documentation, not proof that current notebook defaults match the historical run.
 
 Preserve the notebook version, configuration cell output, or training logs actually used for this run before recording exact dimensions, token budgets, optimization settings, stopping criteria, and generation settings. The original code commit and checkpoint checksum are not available in the exported evidence.
 
