@@ -9,8 +9,10 @@ Individual capstone work by Vibhu Yadav (231145). The capstone entry points are 
 | 1 | Legal language model pretraining | [Phase 1 notebook](Phase1/CS781_Phase1_Solution_Colab.ipynb) | [Phase 1 README](Phase1/README.md) |
 | 2 | Legal named entity recognition | [Phase 2 notebook](Phase2/CS781_Phase2_Solution_Colab.ipynb) | [Phase 2 README](Phase2/README.md) |
 | 3 | Rhetorical role prediction | [Phase 3 notebook](Phase3/CS781_Phase3_Solution_Colab.ipynb) | [Phase 3 README](Phase3/README.md) |
+| 4 | Court judgment prediction | [Phase 4 notebook](Phase4/CS781_Phase4_Solution_Colab.ipynb) | [Phase 4 README](Phase4/README.md) |
+| 5 | Legal statute identification | [Phase 5 notebook](Phase5/CS781_Phase5_Solution_Colab.ipynb) | [Phase 5 README](Phase5/README.md) |
 
-Phase 1 implements decoder-only, encoder-decoder, hybrid Prefix-LM, and lightweight architectures trained from scratch. Phases 2 and 3 adapt Phase 1 checkpoints using the methods documented in their READMEs. The available code is not evidence that every experiment has finished or been accepted on Codabench.
+Phase 1 implements decoder-only, encoder-decoder, hybrid Prefix-LM, and lightweight architectures trained from scratch. Phases 2–5 adapt Phase 1 checkpoints using the methods documented in their READMEs. The available code is not evidence that every experiment has finished or been accepted on Codabench.
 
 ## Running the notebooks
 
@@ -31,8 +33,10 @@ Large artifacts remain in Google Drive:
 | `cs781_phase1/` | Phase 1 tokenizer, architecture run folders, and pretrained checkpoints |
 | `cs781_phase2/` | Phase 2 experiment outputs |
 | `cs781_phase3/` | Phase 3 experiment outputs |
+| `cs781_phase4/` | Phase 4 experiment outputs |
+| `cs781_phase5/` | Phase 5 experiment outputs |
 
-The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phase 2 and Phase 3 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 1–3 folders are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
+The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–5 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 1–3 folders are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
 
 Checkpoints, datasets, prediction archives, and executed notebook copies are excluded from new Git additions. Small metric/configuration files and selected plots can be copied into `results/phaseN/<experiment>_<run_tag>/` when available. Review files for credentials and dataset text before adding them.
 
@@ -44,9 +48,9 @@ Keep development and Codabench scores separate. Development scores used for chec
 
 ## Supporting code and validation
 
-`Phase2/` and `Phase3/` contain notebook builders and offline validation scripts. Run builders from this repository layout because they reuse the Phase 1 notebook in `Phase1/`. Validation scripts also require local Phase 1 weights and the dependencies listed in the phase READMEs.
+`Phase2/` through `Phase5/` contain notebook builders and offline validation scripts. Builders reuse earlier phase notebook definitions and expect the phase folder layout in this repository. Phase 5 also includes source modules embedded into its standalone notebook. Validation scripts also require local Phase 1 weights and the dependencies listed in the phase READMEs.
 
-Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VALIDATION.md). These describe prior offline checks and their limits; they do not establish current Colab training results or Codabench acceptance.
+Existing validation notes: [Phase 2](Phase2/VALIDATION.md), [Phase 3](Phase3/VALIDATION.md), [Phase 4](Phase4/VALIDATION.md), [Phase 5](Phase5/VALIDATION.md). These describe prior offline checks and their limits; they do not establish current Colab training results or Codabench acceptance.
 
 ## Remaining documentation
 
@@ -62,3 +66,5 @@ Keep competition solutions private and provide instructor access according to co
 ## Results
 
 [Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1 historical settings and scores remain unrecorded; Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
+
+Phase 4 and Phase 5 implementations are included; their saved result artifacts are pending import. See [Phase 4 status](results/phase4/) and [Phase 5 status](results/phase5/).

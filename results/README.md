@@ -7,6 +7,8 @@ Browse by phase, then open a run for its saved evidence and documentation.
 | 1 | Legal language model pretraining | 4 | [Phase 1 plots and missing records](phase1/) |
 | 2 | Legal named entity recognition | 14 | [Phase 2 settings and validation results](phase2/) |
 | 3 | Rhetorical role prediction | 8 | [Phase 3 settings and development results](phase3/) |
+| 4 | Court judgment prediction | 0 imported | [Phase 4 import status](phase4/) |
+| 5 | Legal statute identification | 0 imported | [Phase 5 import status](phase5/) |
 
 Phase 1 currently has loss plots only; exact historical configurations and evaluation scores remain unavailable. Phase 2 and Phase 3 include saved configurations and selection metrics. Scores from different tasks and split definitions are not directly comparable.
 
