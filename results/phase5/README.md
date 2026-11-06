@@ -1,11 +1,29 @@
 # Phase 5 results
 
-Legal statute identification. The [implementation and instructions](../../Phase5/README.md) are prepared, but saved run artifacts have not yet been imported. No result rows or completed runs are claimed here.
+Six saved runs are documented below. Scores use the 0–1 scale and development labels were used for checkpoint and threshold selection. No Codabench score or acceptance is established by these artifacts.
 
-Import each run’s `run_config.json`, `model_metadata.json`, `metrics.json`, `best_dev_metrics.json`, `threshold.json`, `verification.json`, `chunk_coverage.json`, `class_weights.json`, `history.json`, and available plots. Phase 5 also produces `per_label_metrics.csv` and `missed_statutes.png`. An ensemble should retain its separate folder and `ensemble_recipe.json` rather than be counted as another adaptation method.
+| Run | Origin | Method | Macro-F1 | Micro-F1 | Subset accuracy |
+| --- | --- | --- | ---: | ---: | ---: |
+| [decoder_full_v1](decoder_full_v1/) | decoder_only | Full fine-tuning | 0.36727 | 0.46086 | 0.03791 |
+| [encoder_partial_v1](encoder_partial_v1/) | encoder_decoder | Partial encoder fine-tuning | 0.28858 | 0.37688 | 0.01385 |
+| [hybrid_adapters_v1](hybrid_adapters_v1/) | hybrid_prefixlm | Residual bottleneck adapters | 0.35353 | 0.44285 | 0.03015 |
+| [hybrid_lorma_v1](hybrid_lorma_v1/) | hybrid_prefixlm | LoRMA+ | 0.34514 | 0.44130 | 0.02573 |
+| [lightweight_kd_v1](lightweight_kd_v1/) | lightweight | Knowledge distillation | 0.38345 | 0.47414 | 0.03585 |
+| [lightweight_lorma_v1](lightweight_lorma_v1/) | lightweight | LoRMA+ | 0.35435 | 0.44902 | 0.02848 |
 
-Preserve original experiment names and run tags. Add a run README and an [experiment ledger](../../experiments/runs.csv) entry from the actual saved configuration and metrics. Do not infer past run settings from current notebook defaults. Model weights, datasets, predictions, probabilities, caches, and submission archives remain in Drive.
+Highest recorded development macro-F1: **0.38345** from `lightweight_kd_v1`. This ranking describes imported development selection scores, not private test performance. Architecture and adaptation vary together across several runs; these are descriptive comparisons and do not isolate one design choice.
 
-Phase 5 uses macro-F1 over statute decisions; record the saved metric-label scope, threshold policy, Micro-F1, and Subset Accuracy. Different label-scope conventions must not be silently mixed. Development labels select checkpoints and thresholds. Codabench scores and acceptance must be recorded independently.
+All imported Phase 5 configurations use `reference_range` for macro-F1 over statute decisions. The per-run CSVs and metrics JSONs preserve label counts and alternative scope metrics. Do not compare these scores with Phase 4 binary-class macro-F1.
 
-[All results](../)
+All saved training-complete flags and boolean verification checks pass. Historical training commits, standalone environment reports, and official test scores were not exported. Missing ensemble recipes are expected for these individual-model folders; no ensemble was imported.
+
+## Phase-level evidence
+
+- [best_per_architecture.json](best_per_architecture.json)
+- [coverage.json](coverage.json)
+- [experiment_summary.csv](experiment_summary.csv)
+- [export_manifest.json](export_manifest.json)
+
+The saved coverage report marks local completion/method/origin/distinct-prediction checks as passed and explicitly marks Codabench acceptance as unverified. These saved checks are not independently reproducible without the predictions and checkpoints retained in Drive.
+
+[Implementation and instructions](../../Phase5/README.md) · [Experiment ledger](../../experiments/runs.csv) · [All results](../)

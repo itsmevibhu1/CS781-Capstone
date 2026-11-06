@@ -1,0 +1,23 @@
+{
+  "train": {
+    "cases": 37387,
+    "mean_token_coverage": 0.5683843760555723,
+    "cases_with_full_coverage": 9741,
+    "mean_chunks": 3.5833043571294834,
+    "max_chunks": 4
+  },
+  "dev": {
+    "cases": 1988,
+    "mean_token_coverage": 0.41695398520439075,
+    "cases_with_full_coverage": 132,
+    "mean_chunks": 3.942655935613682,
+    "max_chunks": 4
+  },
+  "test": {
+    "cases": 1517,
+    "mean_token_coverage": 0.41085111317794804,
+    "cases_with_full_coverage": 108,
+    "mean_chunks": 3.936058009228741,
+    "max_chunks": 4
+  }
+}

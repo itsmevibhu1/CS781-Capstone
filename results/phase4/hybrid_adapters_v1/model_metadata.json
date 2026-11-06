@@ -1,0 +1,30 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 640,
+    "n_head": 10,
+    "d_ff": 2560,
+    "max_len": 1152
+  },
+  "phase1_parameters": 99139200,
+  "selected_phase1_layers": null,
+  "adapter_targets": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "total_parameters": 100380427,
+  "trainable_parameters_initial": 1241227,
+  "teacher_run": null,
+  "teacher_signature": null
+}

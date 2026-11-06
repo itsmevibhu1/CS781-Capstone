@@ -1,0 +1,79 @@
+{
+  "macro_f1": 0.6429481108970381,
+  "precision": 0.6781326781326781,
+  "recall": 0.5553319919517102,
+  "macro_precision": 0.6508210239044991,
+  "macro_recall": 0.6458752515090543,
+  "accuracy": 0.6458752515090543,
+  "per_class": {
+    "0": {
+      "precision": 0.6235093696763203,
+      "recall": 0.7364185110663984,
+      "f1": 0.6752767527675276,
+      "tp": 732,
+      "fp": 442,
+      "fn": 262,
+      "support": 994
+    },
+    "1": {
+      "precision": 0.6781326781326781,
+      "recall": 0.5553319919517102,
+      "f1": 0.6106194690265486,
+      "tp": 552,
+      "fp": 262,
+      "fn": 442,
+      "support": 994
+    }
+  },
+  "confusion_matrix": [
+    [
+      732,
+      262
+    ],
+    [
+      442,
+      552
+    ]
+  ],
+  "cases": 1988,
+  "experiment": "hybrid_adapters",
+  "run_name": "hybrid_adapters",
+  "architecture": "hybrid_prefixlm",
+  "method": "adapters",
+  "threshold": 0.33198546376791266,
+  "baseline_macro_f1": 0.5883163118331585,
+  "training_complete": true,
+  "optimizer_steps": 28044,
+  "best_epoch": 3,
+  "trainable_parameters_final": 1241227,
+  "training_seconds": 7166.101991176605,
+  "peak_gpu_memory_bytes": 645893632,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 640,
+    "n_head": 10,
+    "d_ff": 2560,
+    "max_len": 1152
+  },
+  "phase1_parameters": 99139200,
+  "selected_phase1_layers": null,
+  "adapter_targets": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "total_parameters": 100380427,
+  "trainable_parameters_initial": 1241227,
+  "teacher_run": null,
+  "teacher_signature": null
+}

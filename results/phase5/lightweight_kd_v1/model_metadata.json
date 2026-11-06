@@ -1,0 +1,30 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 3,
+    "d_ff": 2176,
+    "max_len": 1024
+  },
+  "phase1_parameters": 102451968,
+  "selected_phase1_layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "adapter_targets": [],
+  "total_parameters": 63794669,
+  "trainable_parameters_initial": 63794669,
+  "teacher_run": "/content/drive/MyDrive/cs781_phase5/decoder_full_v1",
+  "teacher_signature": {
+    "checkpoint_bytes": 442906498,
+    "checkpoint_mtime_ns": 1792927202000000000,
+    "data_fingerprint": "ea6908ec9d0d62b3234b25c7a7dae8170de1059df34a64518f5daaebde2e6275",
+    "tokenizer_hash": "b972fc6998aab69d09a010107f14c06b4540f6787e1d52b86a7ff98112584ac0"
+  }
+}

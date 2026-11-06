@@ -108,6 +108,6 @@ Build: `python Phase5/build_phase5_notebook.py`.
 
 Test: `python Phase5/validate_phase5_notebook.py` in an environment with torch, numpy, tokenizers, tqdm, matplotlib, nbformat and huggingface_hub. Tests use the four actual local Phase 1 checkpoints plus synthetic complete train/dev/test pipelines; they do not authenticate to the gated dataset. See [VALIDATION.md](VALIDATION.md).
 
-## Repository results status
+## Saved run results
 
-The code and existing offline validation notes are included here. Saved official run artifacts have not yet been imported into this repository. Current notebook defaults do not establish settings for past submissions; keep the original run configurations and code versions. See the [results status](../results/phase5/README.md). Codabench scores, IDs, and acceptance must come from actual competition records.
+[Browse Phase 5 results](../results/phase5/) for six documented runs, configurations, score comparisons, coverage, plots, and saved verification. Training-complete flags pass in the imported artifacts. These are development selection results; historical code commits and Codabench IDs/scores/acceptance remain unrecorded. See the [experiment ledger](../experiments/runs.csv).

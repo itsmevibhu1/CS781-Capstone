@@ -1,0 +1,4 @@
+{
+  "threshold": 0.14318770218257626,
+  "rule": "p(class 1) >= threshold"
+}

@@ -1,0 +1,26 @@
+{
+  "lightweight": {
+    "run_name": "lightweight_kd",
+    "macro_f1": 0.38344562397413307,
+    "method": "kd",
+    "submission": "/content/drive/MyDrive/cs781_phase5/lightweight_kd_v1/submission.zip"
+  },
+  "decoder_only": {
+    "run_name": "decoder_full",
+    "macro_f1": 0.36726521458061917,
+    "method": "full",
+    "submission": "/content/drive/MyDrive/cs781_phase5/decoder_full_v1/submission.zip"
+  },
+  "hybrid_prefixlm": {
+    "run_name": "hybrid_adapters",
+    "macro_f1": 0.3535251554930114,
+    "method": "adapters",
+    "submission": "/content/drive/MyDrive/cs781_phase5/hybrid_adapters_v1/submission.zip"
+  },
+  "encoder_decoder": {
+    "run_name": "encoder_partial",
+    "macro_f1": 0.2885821735398618,
+    "method": "partial",
+    "submission": "/content/drive/MyDrive/cs781_phase5/encoder_partial_v1/submission.zip"
+  }
+}

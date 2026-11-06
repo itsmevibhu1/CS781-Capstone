@@ -100,6 +100,6 @@ Actual task performance must be measured in Colab. Dev-selected scores are selec
 
 Run `python Phase4/validate_phase4_notebook.py` in an environment containing torch, tokenizers, numpy, tqdm, matplotlib, nbformat and huggingface_hub. The script uses actual local Phase 1 checkpoints plus synthetic train/dev/test files and writes temporary artifacts under `/tmp`. See [VALIDATION.md](VALIDATION.md) for the verification scope.
 
-## Repository results status
+## Saved run results
 
-The code and existing offline validation notes are included here. Saved official run artifacts have not yet been imported into this repository. Current notebook defaults do not establish settings for past submissions; keep the original run configurations and code versions. See the [results status](../results/phase4/README.md). Codabench scores, IDs, and acceptance must come from actual competition records.
+[Browse Phase 4 results](../results/phase4/) for six documented runs, configurations, score comparisons, coverage, plots, and saved verification. Training-complete flags pass in the imported artifacts. These are development selection results; historical code commits and Codabench IDs/scores/acceptance remain unrecorded. See the [experiment ledger](../experiments/runs.csv).

@@ -1,0 +1,79 @@
+{
+  "macro_f1": 0.6402651268705271,
+  "precision": 0.6635730858468677,
+  "recall": 0.5754527162977867,
+  "macro_precision": 0.6443975553568264,
+  "macro_recall": 0.641851106639839,
+  "accuracy": 0.641851106639839,
+  "per_class": {
+    "0": {
+      "precision": 0.6252220248667851,
+      "recall": 0.7082494969818913,
+      "f1": 0.6641509433962264,
+      "tp": 704,
+      "fp": 422,
+      "fn": 290,
+      "support": 994
+    },
+    "1": {
+      "precision": 0.6635730858468677,
+      "recall": 0.5754527162977867,
+      "f1": 0.6163793103448276,
+      "tp": 572,
+      "fp": 290,
+      "fn": 422,
+      "support": 994
+    }
+  },
+  "confusion_matrix": [
+    [
+      704,
+      290
+    ],
+    [
+      422,
+      572
+    ]
+  ],
+  "cases": 1988,
+  "experiment": "lightweight_kd",
+  "run_name": "lightweight_kd",
+  "architecture": "lightweight",
+  "method": "kd",
+  "threshold": 0.33166068372660307,
+  "baseline_macro_f1": 0.5905949504613339,
+  "training_complete": true,
+  "optimizer_steps": 28044,
+  "best_epoch": 3,
+  "trainable_parameters_final": 63782027,
+  "training_seconds": 5300.670648574829,
+  "peak_gpu_memory_bytes": 1415289344,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 3,
+    "d_ff": 2176,
+    "max_len": 1024
+  },
+  "phase1_parameters": 102451968,
+  "selected_phase1_layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "adapter_targets": [],
+  "total_parameters": 63782027,
+  "trainable_parameters_initial": 63782027,
+  "teacher_run": "/content/drive/MyDrive/cs781_phase4/decoder_full_v1",
+  "teacher_signature": {
+    "checkpoint_bytes": 442808691,
+    "checkpoint_mtime_ns": 1792601092000000000,
+    "data_fingerprint": "b87512c7cc561ba10134813f7c926173118e6489374331d770dbcb85689a476b",
+    "tokenizer_hash": "b972fc6998aab69d09a010107f14c06b4540f6787e1d52b86a7ff98112584ac0"
+  }
+}

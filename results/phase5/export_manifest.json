@@ -1,0 +1,145 @@
+{
+  "exported_at_utc": "2026-11-06T20:56:14.474713+00:00",
+  "source_folder": "cs781_phase5",
+  "status": "runs_found",
+  "runs": [
+    {
+      "folder": "decoder_full_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "encoder_partial_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "hybrid_adapters_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "hybrid_lorma_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "lightweight_kd_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    },
+    {
+      "folder": "lightweight_lorma_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "threshold.json",
+        "chunk_coverage.json",
+        "class_weights.json",
+        "per_label_metrics.csv",
+        "missed_statutes.png"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "ensemble_recipe.json"
+      ],
+      "note": "Availability does not establish run completion or submission acceptance."
+    }
+  ],
+  "phase_files": [
+    "best_per_architecture.json",
+    "coverage.json",
+    "experiment_summary.csv"
+  ],
+  "notes": "Saved artifacts only. No training, checkpoint loading, or Codabench verification performed."
+}

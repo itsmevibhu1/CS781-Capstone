@@ -36,7 +36,7 @@ Large artifacts remain in Google Drive:
 | `cs781_phase4/` | Phase 4 experiment outputs |
 | `cs781_phase5/` | Phase 5 experiment outputs |
 
-The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–5 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 1–3 folders are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
+The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–5 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 1–5 folders are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
 
 Checkpoints, datasets, prediction archives, and executed notebook copies are excluded from new Git additions. Small metric/configuration files and selected plots can be copied into `results/phaseN/<experiment>_<run_tag>/` when available. Review files for credentials and dataset text before adding them.
 
@@ -67,4 +67,4 @@ Keep competition solutions private and provide instructor access according to co
 
 [Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1 historical settings and scores remain unrecorded; Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
 
-Phase 4 and Phase 5 implementations are included; their saved result artifacts are pending import. See [Phase 4 status](results/phase4/) and [Phase 5 status](results/phase5/).
+Phase 4 and Phase 5 each contain six documented runs with saved configurations, development scores, coverage, plots, and verification. See [Phase 4 results](results/phase4/) and [Phase 5 results](results/phase5/).

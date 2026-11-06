@@ -1,0 +1,11 @@
+{
+  "four_completed_runs": true,
+  "six_completed_runs": true,
+  "six_distinct_prediction_contents": true,
+  "all_four_phase1_origins": true,
+  "three_adaptation_methods_excluding_kd": true,
+  "four_listed_techniques": true,
+  "compulsory_lorma": true,
+  "compulsory_kd": true,
+  "codabench_acceptance_verified": false
+}

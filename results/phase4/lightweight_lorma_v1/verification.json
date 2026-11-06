@@ -1,0 +1,13 @@
+{
+  "checkpoint_reload_macro_f1_matches": true,
+  "dev_json_metrics_roundtrip": true,
+  "one_prediction_per_test_case": true,
+  "original_ids_and_types": true,
+  "integer_binary_predictions": true,
+  "zip_root_and_json_match": true,
+  "train_dev_test_separate": true,
+  "test_cases": 1517,
+  "training_complete": true,
+  "official_test_score": null,
+  "score_scope": "official DEV used for model and threshold selection"
+}
