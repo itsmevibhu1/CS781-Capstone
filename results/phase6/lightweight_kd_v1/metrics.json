@@ -1,0 +1,54 @@
+{
+  "bertscore_f1": 0.8365982174873352,
+  "bertscore_precision": 0.855351448059082,
+  "bertscore_recall": 0.8187881112098694,
+  "rouge1_f1": 0.3170691576697415,
+  "rougeL_f1": 0.1792946081917289,
+  "cases": 351,
+  "bert_score_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.57.6)",
+  "metric_config": {
+    "model": "roberta-large",
+    "layers": 17,
+    "rescale": false,
+    "idf": false,
+    "rouge_use_stemmer": true
+  },
+  "mean_generated_words": 181.6951566951567,
+  "mean_reference_words": 838.7863247863248,
+  "experiment": "lightweight_kd",
+  "run_name": "lightweight_kd",
+  "architecture": "lightweight",
+  "method": "kd",
+  "best_epoch": 4,
+  "training_complete": true,
+  "full_validation": true,
+  "optimizer_steps": 3340,
+  "training_seconds": 1391.521939277649,
+  "peak_gpu_memory_bytes": 2582077952,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 3,
+    "d_ff": 2176,
+    "max_len": 1024
+  },
+  "selected_phase1_layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "total_parameters": 63514368,
+  "trainable_parameters": 63514368,
+  "teacher": {
+    "path": "/content/drive/MyDrive/cs781_phase6/decoder_lora_v1",
+    "bytes": 443527037,
+    "mtime_ns": 1793378619000000000,
+    "teacher_parameters": 110860800,
+    "mode": "token_kl_on_train_references_only"
+  }
+}

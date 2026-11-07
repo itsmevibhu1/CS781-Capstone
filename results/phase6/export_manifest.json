@@ -1,0 +1,468 @@
+{
+  "phase": 6,
+  "source_folder": "cs781_phase6",
+  "exported_at_utc": "2026-11-07T11:09:20.274999+00:00",
+  "runs": [
+    {
+      "folder": "decoder_lora_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "encoder_adapters_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "encoder_full_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "hybrid_lorma_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "lightweight_kd_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "lightweight_prompt_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "generation_config.json",
+        "context_coverage.json",
+        "selection_manifest.json",
+        "best_selection_metrics.json"
+      ],
+      "missing_artifacts": [
+        "environment.json",
+        "decoding_search.json"
+      ],
+      "has_saved_training_config": true
+    }
+  ],
+  "phase_files": [
+    "experiment_summary.csv",
+    "coverage.json",
+    "best_per_architecture.json",
+    "split_manifest.json",
+    "data_quality_report.json",
+    "excluded_training_rows.json"
+  ],
+  "notes": "Saved artifacts only; no training or official evaluation rerun. Folder discovery does not establish completion or submission acceptance.",
+  "files": [
+    {
+      "path": "results/phase6/decoder_lora_v1/run_config.json",
+      "bytes": 1676,
+      "sha256": "307bb24e5052cc3701cd6e2036b8e2fa5bf83c47a54df2eb6aa7e683eea9da86"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/model_metadata.json",
+      "bytes": 267,
+      "sha256": "c57777f0db3050405969d193ab78cc173e6edb0392311990109d8a488bedd72f"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/metrics.json",
+      "bytes": 1094,
+      "sha256": "2b8ec98531278ff3a585b5e44fc4ac42d4153795613df46051f5b213c9e810b0"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/history.json",
+      "bytes": 316867,
+      "sha256": "b9cf147d002571b5bfa92d06f86438f2041906db60e6cc1abd4f774d70bdb78a"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/training_curves.png",
+      "bytes": 75268,
+      "sha256": "5180bdbaab66f54bfad8eb54fd5dcee1034b8527187b50655c4a711c12d51606"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/decoder_lora_v1/best_selection_metrics.json",
+      "bytes": 557,
+      "sha256": "8b31a6eef8ed6debb9fb9e6275cd13e07cf9c285083c43400119bfdd5cea638a"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/run_config.json",
+      "bytes": 1686,
+      "sha256": "39e088352180868456ac531390be675f91123664c5b070e2c25ed01d127299a7"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/model_metadata.json",
+      "bytes": 272,
+      "sha256": "d077728a50e261afa61f99cfcb235dd9e612794df3441be4f37e389999c727d2"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/metrics.json",
+      "bytes": 1113,
+      "sha256": "d212596b11ada0d9fa40c69d9208a63a9c811df602946a20c3922dd86dc6ee48"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/history.json",
+      "bytes": 315478,
+      "sha256": "a46a13843aaf1888224cc89c5c5f828421b5b089ba1d2432ac49c090c05d96b2"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/training_curves.png",
+      "bytes": 78038,
+      "sha256": "7ca07453a4167f55bf289eae9be4fb78751742fce7ef2315ba03a553afe904a0"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/encoder_adapters_v1/best_selection_metrics.json",
+      "bytes": 556,
+      "sha256": "1a5f244e188c1feb7bbdd64e32503e308e4d00946ca6fee587f571816e7842e0"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/run_config.json",
+      "bytes": 1678,
+      "sha256": "e3605c7e5f06859bb650bd0da3023d86d9936db1bddb36e52646360570e79f5a"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/model_metadata.json",
+      "bytes": 274,
+      "sha256": "3a82448bb2e1e32bec66d614890845b510c6c9fb63e6b8633a6122ce15010ef2"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/metrics.json",
+      "bytes": 1105,
+      "sha256": "00b1e41718af6139c035126fb27429fa38ac4d5c5197f9dfdd9189ab5c4c7f4a"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/history.json",
+      "bytes": 315517,
+      "sha256": "38673327425c770d77873f071fad8de1dfdaeabfd712c90de0bf16caeef5e97a"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/training_curves.png",
+      "bytes": 72089,
+      "sha256": "625a75ef0811e3dba7be995173bcc6cd542a3ab6854d19152e90696392e11812"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/encoder_full_v1/best_selection_metrics.json",
+      "bytes": 555,
+      "sha256": "987e2e194809b53f52a0163ec6cfefc82f3e6851c724977111434e79af25a61f"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/run_config.json",
+      "bytes": 1680,
+      "sha256": "4810a502746c3417748612e5b965b89e403650737cb8fc26bd728f482647912f"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/model_metadata.json",
+      "bytes": 267,
+      "sha256": "8f470572efe4229964e9bfde0584183951b12afa4199a35c504d2fa66da93395"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/metrics.json",
+      "bytes": 1098,
+      "sha256": "3a19ffabb189ddb38fcd5d298726de5002eb60cf56272ef6e51bffda71d31958"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/history.json",
+      "bytes": 315494,
+      "sha256": "0008632c4b43421249625321054304c037e0d2d03f6bf5b31faf76d4c2f21a4b"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/training_curves.png",
+      "bytes": 64100,
+      "sha256": "df10063381cbf3d561bbad9443a2dea62d57bf58202368e0ff254c351250f06c"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/hybrid_lorma_v1/best_selection_metrics.json",
+      "bytes": 555,
+      "sha256": "ef993d5ce61f78a7a9c63db407d2381df60b4172c1cce99e35f600b05569bbbd"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/run_config.json",
+      "bytes": 1674,
+      "sha256": "fc702d01ec942731069de8c784086251e20f2100131809655e88fa9682dbb506"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/model_metadata.json",
+      "bytes": 546,
+      "sha256": "e430b175665fcd5f65a322d5d05c3d3291af6db7a3ca95b3250c512fd2cc618a"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/metrics.json",
+      "bytes": 1371,
+      "sha256": "b566f4524cea26e5b18e2ecbaf7cde1ab6fc3da44bc78cb53784de9f07ee6c69"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/history.json",
+      "bytes": 317177,
+      "sha256": "a581748ba743435dc27efeb415b58015a5d7104eac290b4ea62d836e7cf2da81"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/training_curves.png",
+      "bytes": 66130,
+      "sha256": "d2bc5c0a90092b0f0bd97c8e32cb4fd6e74d82b1a59785b37e53b73ccd77b336"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/lightweight_kd_v1/best_selection_metrics.json",
+      "bytes": 557,
+      "sha256": "fe55fe18215960fc8ef73c33fba7a9488f35906c2e66c75481661c3045ef183b"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/run_config.json",
+      "bytes": 1682,
+      "sha256": "36e7a5a5853556f42eec93046790abc98aec6252af9292cc09052d0680e26aa9"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/model_metadata.json",
+      "bytes": 287,
+      "sha256": "a0a61d4b807831eb715c5e79d3dd861ed0c5849fd00b69509e3d9050f0a8f9c8"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/metrics.json",
+      "bytes": 1127,
+      "sha256": "517c478ee03d84118a5785552ea42267b6ad860727e051cc884bfd1a6bc1f24a"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/history.json",
+      "bytes": 236427,
+      "sha256": "ce64196290e587bf4e758ccf7702f1f6295cb1898c6082ff05fe3651a98bcbb2"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/verification.json",
+      "bytes": 302,
+      "sha256": "f57d71980d1f801db3ae88b0d0dd6813aa6d3718f0111aaea4857240304760af"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/training_curves.png",
+      "bytes": 82947,
+      "sha256": "6df9e11c527163e7aadcfa3e855ecf60997442426e3c77f689d8436599d6e802"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/generation_config.json",
+      "bytes": 250,
+      "sha256": "47cd88f4381919363019f5d9e274d33ff180e85034c963ad65e9ff404e7d54a0"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/context_coverage.json",
+      "bytes": 1093,
+      "sha256": "8824467d9b437eeed35ca0965afc3a6634d95dd9e4453be90f8906953acf9efc"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/selection_manifest.json",
+      "bytes": 3003,
+      "sha256": "c60520cfb2c5ba291969265c93b1388b01a56556c224df072316fce632967d41"
+    },
+    {
+      "path": "results/phase6/lightweight_prompt_v1/best_selection_metrics.json",
+      "bytes": 557,
+      "sha256": "53f16987c981072bed2d5da300eb5c8ac2dc38dc050f26cb1c764c4b10e834dd"
+    },
+    {
+      "path": "results/phase6/experiment_summary.csv",
+      "bytes": 1423,
+      "sha256": "d7865060ce38186f7e657bdd36eade224e00ae1b9604e3f07956f2be92fd2dd4"
+    },
+    {
+      "path": "results/phase6/coverage.json",
+      "bytes": 333,
+      "sha256": "c2d425e69e2bed60dbe7ee70484acc0b0c4bca7c1845ee4538bab94ab6f8083a"
+    },
+    {
+      "path": "results/phase6/best_per_architecture.json",
+      "bytes": 726,
+      "sha256": "e0a2b17110bae62c10c272439c0c5bd85fd5e33231e7ecafe5ba8dcc3c02824e"
+    },
+    {
+      "path": "results/phase6/split_manifest.json",
+      "bytes": 161073,
+      "sha256": "23caaa3cfbb70d1af65f3137a7d74376f304457aa5b1e4c93c56d95add7c185e"
+    },
+    {
+      "path": "results/phase6/data_quality_report.json",
+      "bytes": 1191,
+      "sha256": "cccee602b075f5168ba675a0c2deade182802db1127a59495c37b3da60fe5bd2"
+    },
+    {
+      "path": "results/phase6/excluded_training_rows.json",
+      "bytes": 584,
+      "sha256": "98e1267fbdc6b35efed8d75c7fdf93d8b59c357c946bb167987092bdfe161607"
+    }
+  ]
+}

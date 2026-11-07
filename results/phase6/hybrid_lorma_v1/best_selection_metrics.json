@@ -1,0 +1,19 @@
+{
+  "bertscore_f1": 0.8298497200012207,
+  "bertscore_precision": 0.8462165594100952,
+  "bertscore_recall": 0.8141884803771973,
+  "rouge1_f1": 0.3369335701013528,
+  "rougeL_f1": 0.18288953201033648,
+  "cases": 128,
+  "bert_score_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.57.6)",
+  "metric_config": {
+    "model": "roberta-large",
+    "layers": 17,
+    "rescale": false,
+    "idf": false,
+    "rouge_use_stemmer": true
+  },
+  "mean_generated_words": 218.9375,
+  "mean_reference_words": 835.890625,
+  "validation_loss": 3.6131616387524286
+}

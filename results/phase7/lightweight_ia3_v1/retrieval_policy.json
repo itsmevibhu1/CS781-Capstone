@@ -1,0 +1,7 @@
+{
+  "neural_mode": "late",
+  "dense_weight": 0.75,
+  "rrf_k": 60,
+  "rrf_depth": 200,
+  "citation_weight": 0.0
+}

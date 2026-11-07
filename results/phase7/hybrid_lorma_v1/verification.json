@@ -1,0 +1,10 @@
+{
+  "checkpoint_reload_ranks_match": true,
+  "checkpoint_reload_metrics_match": true,
+  "json_metrics_match": true,
+  "split_specific_candidate_pool": true,
+  "seven_unique_original_candidate_ids": true,
+  "zip_verified": true,
+  "training_complete": true,
+  "private_test_score": null
+}

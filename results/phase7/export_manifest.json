@@ -1,0 +1,517 @@
+{
+  "phase": 7,
+  "source_folder": "cs781_phase7",
+  "exported_at_utc": "2026-11-07T11:12:43.520912+00:00",
+  "runs": [
+    {
+      "folder": "bm25_baseline",
+      "included": [
+        "metrics.json"
+      ],
+      "missing_artifacts": [
+        "run_config.json",
+        "model_metadata.json",
+        "history.json",
+        "verification.json",
+        "environment.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "has_saved_training_config": false
+    },
+    {
+      "folder": "decoder_partial_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "encoder_full_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "hybrid_lorma_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "lightweight_ia3_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "lightweight_kd_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    },
+    {
+      "folder": "lightweight_prompt_v1",
+      "included": [
+        "run_config.json",
+        "model_metadata.json",
+        "metrics.json",
+        "history.json",
+        "verification.json",
+        "training_curves.png",
+        "best_dev_metrics.json",
+        "dense_dev_metrics.json",
+        "retrieval_policy.json",
+        "ranking_trials.json",
+        "chunk_coverage.json"
+      ],
+      "missing_artifacts": [
+        "environment.json"
+      ],
+      "has_saved_training_config": true
+    }
+  ],
+  "phase_files": [
+    "experiment_summary.csv",
+    "coverage.json",
+    "best_per_architecture.json",
+    "dataset_manifest.json",
+    "document_lengths.json"
+  ],
+  "notes": "Saved artifacts only; no training or official evaluation rerun. Folder discovery does not establish completion or submission acceptance.",
+  "files": [
+    {
+      "path": "results/phase7/bm25_baseline/metrics.json",
+      "bytes": 59441,
+      "sha256": "f8451bba4b488ee532a3ba076b6884ce6e6d1b14614f9536075a58bad25161fa"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/run_config.json",
+      "bytes": 1669,
+      "sha256": "0e306cf7f4b7433c5a026857c4b95ad4e1dc82d9910c3d6cad9debb16642af50"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/model_metadata.json",
+      "bytes": 331,
+      "sha256": "24068b0b9752b1ba38e8a5449a95234b9e1065017cf7722525b3b72a2b244641"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/metrics.json",
+      "bytes": 56108,
+      "sha256": "9cf7576beca2ffb71de4a133f918bc00fd9e8eb294fa5c82c8bbe4e410f14893"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/history.json",
+      "bytes": 58709,
+      "sha256": "d7df5dc65b7660d3f8d696995930f47edefa6e365b20da626d95049e7df52137"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/training_curves.png",
+      "bytes": 106582,
+      "sha256": "9f94a4ee18504f092dfd04c8f263794cedc14bdf17fe8bf115f398998b118a4a"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/best_dev_metrics.json",
+      "bytes": 55410,
+      "sha256": "dd62dcee16a8d772c32effad9581c6e30419386413f82d3c04064182bc49eb9e"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/dense_dev_metrics.json",
+      "bytes": 56691,
+      "sha256": "63719e5876a987a09177522541370d26b51fa4e0c08d7fff76f3247e541be5e6"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/retrieval_policy.json",
+      "bytes": 112,
+      "sha256": "f14c332dc9f08dab1008f57c0b5fa48ee242f904bb446ec337f05caed8dd5d2d"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/ranking_trials.json",
+      "bytes": 1615,
+      "sha256": "f7f53d278283953c63d7b5a93e6de2e979fb7ad335861ce7a318230f21e9690b"
+    },
+    {
+      "path": "results/phase7/decoder_partial_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/run_config.json",
+      "bytes": 1666,
+      "sha256": "7671021639bf021f978533952d5f156962154e51fd627d96859a25a37f83e059"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/model_metadata.json",
+      "bytes": 334,
+      "sha256": "e773ffdb6ee2d85cade62ac3e5735c6b4e21fddf3d698b26d179d0dd158e5d5a"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/metrics.json",
+      "bytes": 56576,
+      "sha256": "5d386a123848c22e92aa593f3ee18d58a606a3bc13705d0156c5e9c7643f1b14"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/history.json",
+      "bytes": 58710,
+      "sha256": "001efb4af7f09c5579d4667cb35ccf8ac95c89ce02a5d370de05820fc5dcd728"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/training_curves.png",
+      "bytes": 100990,
+      "sha256": "b58a80c5deb20a3992923b6dc9001fd2ca2dc9cd55b42fdaa1123940ff5e7940"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/best_dev_metrics.json",
+      "bytes": 55880,
+      "sha256": "1f72830c29bcbf0c22449ce0a6c998a379e12492f375f84dd103ba335e27f056"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/dense_dev_metrics.json",
+      "bytes": 57205,
+      "sha256": "e7224663c5a277509deb547c971a1ffe6ddbcb736c3c7f8b5bd0c59ced92c6e0"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/retrieval_policy.json",
+      "bytes": 113,
+      "sha256": "8cfc7be4349298f5399edd76bd67099cdc068d1f239348e6bbaa1f5809ebfa6a"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/ranking_trials.json",
+      "bytes": 1618,
+      "sha256": "a3154051ba47982a0405bbe09cb3f383acdc5a749b75068bd3a44d7d944b8f13"
+    },
+    {
+      "path": "results/phase7/encoder_full_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/run_config.json",
+      "bytes": 1668,
+      "sha256": "8a423d75744466da1b1538d591e68765baf5d042bed476f28f1660a4cd660d87"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/model_metadata.json",
+      "bytes": 947,
+      "sha256": "eb62b96b9bdab25d849d91db60d53340525caac25198e1e47229bfe7c9227195"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/metrics.json",
+      "bytes": 56693,
+      "sha256": "a00f5eb5b51b883bb2fd9a567b1aa20ac219b905d24881f658ac58a6986d4aeb"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/history.json",
+      "bytes": 58711,
+      "sha256": "419eb8191eccfcc15f4b425a64bd66139acff5918c866b9a2361490f44e5d715"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/training_curves.png",
+      "bytes": 98429,
+      "sha256": "31a38cc82ca959c518e46d0df11a06d98645b2652a673d54fe4a38ad5535907b"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/best_dev_metrics.json",
+      "bytes": 55384,
+      "sha256": "52a90731ca6fe8b091422b49342c65f243f7820a53cad48fcab524276e5e1b1d"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/dense_dev_metrics.json",
+      "bytes": 56930,
+      "sha256": "2f6933e7953c6dddebc90207f6820a631a00f865404c0eff8b738c4a169be9a2"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/retrieval_policy.json",
+      "bytes": 113,
+      "sha256": "8cfc7be4349298f5399edd76bd67099cdc068d1f239348e6bbaa1f5809ebfa6a"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/ranking_trials.json",
+      "bytes": 1616,
+      "sha256": "be72a11bd5e82fd731cf1f2d4b8a96ac6dc24ad26b0a9778856afffc10660e17"
+    },
+    {
+      "path": "results/phase7/hybrid_lorma_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/run_config.json",
+      "bytes": 1665,
+      "sha256": "bbd578b822323f2825c55e2d8eb64cba8c2b3173454096b4ed9c658b5af51e8f"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/model_metadata.json",
+      "bytes": 1294,
+      "sha256": "8f3363de7cdf7d67db9c4f55027f9c4a1b2f87c9cc8593e96f1f6ce3b09ece7d"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/metrics.json",
+      "bytes": 58172,
+      "sha256": "2739a1f116f9774f4c0bbab66965f77697948a01530713302f70edb9e667b7bb"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/history.json",
+      "bytes": 58714,
+      "sha256": "e910c96b1140c2b9184994cd4d27238e9e64f0816be8958e26e48086240bef27"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/training_curves.png",
+      "bytes": 105801,
+      "sha256": "016a92dbb22baf94195d1ed3a1719a1b21a8696ce48c8a4f003466250d0290a2"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/best_dev_metrics.json",
+      "bytes": 56515,
+      "sha256": "5d3c7230de65acd93f64829e440680cf269f4ec99099f559c92b778b316ad4c1"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/dense_dev_metrics.json",
+      "bytes": 58127,
+      "sha256": "d7fadfd7bd237a8129949ebe048a812ebf12d5fe5e9c5273dae7b8ec02fc5cc9"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/retrieval_policy.json",
+      "bytes": 112,
+      "sha256": "f14c332dc9f08dab1008f57c0b5fa48ee242f904bb446ec337f05caed8dd5d2d"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/ranking_trials.json",
+      "bytes": 1615,
+      "sha256": "955c9df8e52c01ff3b655c6d0fb1ff0c415d1e266b4091954d1fdf7cbf98c6d2"
+    },
+    {
+      "path": "results/phase7/lightweight_ia3_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/run_config.json",
+      "bytes": 1662,
+      "sha256": "a2afd72db846dfbbe946cdfd1d4ee8e15c353017356f92707b607d73ab2e8faf"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/model_metadata.json",
+      "bytes": 609,
+      "sha256": "6e5e408885308a174e11b2aba85026002dac8f8a14c8e2a61881d4b6b75018bf"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/metrics.json",
+      "bytes": 55786,
+      "sha256": "2328a91050aa8d8b870b1dec5e3a1b5c87d36829259beab0d821c2aa30599155"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/history.json",
+      "bytes": 58815,
+      "sha256": "4ddd0d9cc6c259589d7d92a48cbeb8054f8457bdcfb1c2cb09ef6b8d03703c70"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/training_curves.png",
+      "bytes": 97354,
+      "sha256": "2bdfcc0384cd6343ddc32d38c9f8fcc700eadd3cfa08636ef6881079546166ce"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/best_dev_metrics.json",
+      "bytes": 54817,
+      "sha256": "f59288811da842e240752683cea76318dfd8f7238dfc3240561e8900e81c43fd"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/dense_dev_metrics.json",
+      "bytes": 56071,
+      "sha256": "11610458613f0901ad812121024aba4555e1da59020da5495ea99cb4c3a3facb"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/retrieval_policy.json",
+      "bytes": 113,
+      "sha256": "8cfc7be4349298f5399edd76bd67099cdc068d1f239348e6bbaa1f5809ebfa6a"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/ranking_trials.json",
+      "bytes": 1614,
+      "sha256": "85c9bf8fb3523c1bce26539a8f27b0434017699c5387e6fc3006ebe00bcaf5d4"
+    },
+    {
+      "path": "results/phase7/lightweight_kd_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/run_config.json",
+      "bytes": 1670,
+      "sha256": "47f2ef7f7d9b84f663da42f4b19cffa5398a001cec12f678af5ea007256ee476"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/model_metadata.json",
+      "bytes": 350,
+      "sha256": "9582f1e41c8f09edcc4cdb6b0e2f1e7f76bba0afed0fccac38b7b47358e9b76e"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/metrics.json",
+      "bytes": 57856,
+      "sha256": "23200aacdfa3c4e987f849cb109fb26d3460b605249f871f511659c4b0e46b8f"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/history.json",
+      "bytes": 58673,
+      "sha256": "cf16bf66400b8b49dde5a06f591100ca1965b85dd6b038174cdb96117a90e27b"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/verification.json",
+      "bytes": 287,
+      "sha256": "0b7773f1da11278b0071ee7cf5a13b8297c6f82ce737cd247ebb85519b9d9394"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/training_curves.png",
+      "bytes": 103636,
+      "sha256": "ee300a513f067a413c60b84039719b6b2de515c6464bdb2b11241175f6e2ad49"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/best_dev_metrics.json",
+      "bytes": 57133,
+      "sha256": "321f7b27459d3007d4cafe631d3aced07b81b78319b42eb44b2f41f1194087ea"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/dense_dev_metrics.json",
+      "bytes": 59458,
+      "sha256": "4944af4acd3b2b4401411e065999c53fcaf60ebc35ebee7e067f58d21433b484"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/retrieval_policy.json",
+      "bytes": 112,
+      "sha256": "9025f8aa29858c4aeb37a134526cbb50598df3557b46b73b533135b845fe3a7d"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/ranking_trials.json",
+      "bytes": 1617,
+      "sha256": "6e51b3db5a4c92cb728be01e6df1bab0be45a238694e34d0eeb0058accd7c75d"
+    },
+    {
+      "path": "results/phase7/lightweight_prompt_v1/chunk_coverage.json",
+      "bytes": 162,
+      "sha256": "3ff91956e97522cd66693d8cc96573e1efe6835f0e04faef0df81b054f8750e3"
+    },
+    {
+      "path": "results/phase7/experiment_summary.csv",
+      "bytes": 1592,
+      "sha256": "888d5f2243d041f4eb894f86e71450b313522001eaa7396a4eb26c4c82b1e133"
+    },
+    {
+      "path": "results/phase7/coverage.json",
+      "bytes": 316,
+      "sha256": "c78545a93cff247cd02deada79576f542d5307767cbc6c0863240fe1f2cdee88"
+    },
+    {
+      "path": "results/phase7/best_per_architecture.json",
+      "bytes": 845,
+      "sha256": "267555387c9a0ae28521c7a0e701809f32e5b6c88ebca155dfcb315cc19c0410"
+    },
+    {
+      "path": "results/phase7/dataset_manifest.json",
+      "bytes": 16086,
+      "sha256": "bc3b24657aad79325438fdd80b56a86a03f0cef6c75bb68ae6758b2dff329ae9"
+    },
+    {
+      "path": "results/phase7/document_lengths.json",
+      "bytes": 873,
+      "sha256": "a296f95308c065727bd3ba661f7e91cee2f36de10f043ee7d82e75103984f47e"
+    }
+  ]
+}

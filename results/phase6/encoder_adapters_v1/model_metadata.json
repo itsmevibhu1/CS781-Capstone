@@ -1,0 +1,14 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_enc_layer": 6,
+    "n_dec_layer": 6,
+    "d_model": 768,
+    "n_head": 8,
+    "d_ff": 3072
+  },
+  "selected_phase1_layers": null,
+  "total_parameters": 126782336,
+  "trainable_parameters": 3020160,
+  "teacher": null
+}

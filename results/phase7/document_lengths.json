@@ -1,0 +1,44 @@
+{
+  "train": {
+    "queries": {
+      "cases": 827,
+      "tokens_p50": 5741.0,
+      "tokens_p90": 15936.199999999999,
+      "tokens_max": 149683
+    },
+    "candidates": {
+      "cases": 4320,
+      "tokens_p50": 4620.5,
+      "tokens_p90": 15618.8,
+      "tokens_max": 518161
+    }
+  },
+  "dev": {
+    "queries": {
+      "cases": 118,
+      "tokens_p50": 5721.5,
+      "tokens_p90": 19788.6,
+      "tokens_max": 133020
+    },
+    "candidates": {
+      "cases": 1023,
+      "tokens_p50": 5156.0,
+      "tokens_p90": 21133.600000000006,
+      "tokens_max": 518161
+    }
+  },
+  "test": {
+    "queries": {
+      "cases": 237,
+      "tokens_p50": 5947.0,
+      "tokens_p90": 17737.000000000004,
+      "tokens_max": 114199
+    },
+    "candidates": {
+      "cases": 1727,
+      "tokens_p50": 4962.0,
+      "tokens_p90": 17270.00000000001,
+      "tokens_max": 518161
+    }
+  }
+}

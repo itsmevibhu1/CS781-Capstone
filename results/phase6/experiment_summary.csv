@@ -1,0 +1,7 @@
+run_name,architecture,method,bertscore_f1,rouge1_f1,rougeL_f1,best_epoch,training_seconds,total_parameters,trainable_parameters,peak_gpu_memory_bytes,training_complete,full_validation,path
+decoder_lora,decoder_only,lora,0.8391852378845215,0.33787786063277125,0.1909180028481802,4,1653.713892698288,110860800,442368,1262109696,True,True,/content/drive/MyDrive/cs781_phase6/decoder_lora_v1
+lightweight_kd,lightweight,kd,0.8365982174873352,0.3170691576697415,0.1792946081917289,4,1391.521939277649,63514368,63514368,2582077952,True,True,/content/drive/MyDrive/cs781_phase6/lightweight_kd_v1
+hybrid_lorma,hybrid_prefixlm,lorma,0.8297854065895081,0.3393239040200564,0.18626586007762064,4,2160.6372363567352,99630720,491520,763048448,True,True,/content/drive/MyDrive/cs781_phase6/hybrid_lorma_v1
+encoder_full,encoder_decoder,full,0.828248918056488,0.32505686504285625,0.18013821209461392,4,1453.9615097045898,123762176,123762176,2547944960,True,True,/content/drive/MyDrive/cs781_phase6/encoder_full_v1
+encoder_adapters,encoder_decoder,houlsby,0.8266525864601135,0.3248194270848873,0.17886387289462516,3,1712.7561793327332,126782336,3020160,1327015936,True,True,/content/drive/MyDrive/cs781_phase6/encoder_adapters_v1
+lightweight_prompt,lightweight,prompt,0.8265884518623352,0.32604706212592865,0.17826585277411164,1,1598.461844921112,102464256,12288,1223830528,True,True,/content/drive/MyDrive/cs781_phase6/lightweight_prompt_v1

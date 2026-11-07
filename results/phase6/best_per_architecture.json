@@ -1,0 +1,22 @@
+{
+  "decoder_only": {
+    "run": "decoder_lora",
+    "bertscore_f1": 0.8391852378845215,
+    "submission": "/content/drive/MyDrive/cs781_phase6/decoder_lora_v1/submission.zip"
+  },
+  "lightweight": {
+    "run": "lightweight_kd",
+    "bertscore_f1": 0.8365982174873352,
+    "submission": "/content/drive/MyDrive/cs781_phase6/lightweight_kd_v1/submission.zip"
+  },
+  "hybrid_prefixlm": {
+    "run": "hybrid_lorma",
+    "bertscore_f1": 0.8297854065895081,
+    "submission": "/content/drive/MyDrive/cs781_phase6/hybrid_lorma_v1/submission.zip"
+  },
+  "encoder_decoder": {
+    "run": "encoder_full",
+    "bertscore_f1": 0.828248918056488,
+    "submission": "/content/drive/MyDrive/cs781_phase6/encoder_full_v1/submission.zip"
+  }
+}

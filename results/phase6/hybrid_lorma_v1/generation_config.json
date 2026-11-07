@@ -1,0 +1,11 @@
+{
+  "num_beams": 2,
+  "max_new_tokens": 256,
+  "min_new_tokens": 24,
+  "length_penalty": 1.0,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 3,
+  "deduplicate_sentences": false,
+  "long_document_mode": "select",
+  "map_reduce_max_chunks": 4
+}

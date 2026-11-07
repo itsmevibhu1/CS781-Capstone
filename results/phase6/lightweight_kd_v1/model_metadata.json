@@ -1,0 +1,28 @@
+{
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 3,
+    "d_ff": 2176,
+    "max_len": 1024
+  },
+  "selected_phase1_layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "total_parameters": 63514368,
+  "trainable_parameters": 63514368,
+  "teacher": {
+    "path": "/content/drive/MyDrive/cs781_phase6/decoder_lora_v1",
+    "bytes": 443527037,
+    "mtime_ns": 1793378619000000000,
+    "teacher_parameters": 110860800,
+    "mode": "token_kl_on_train_references_only"
+  }
+}

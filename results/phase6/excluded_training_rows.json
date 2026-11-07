@@ -1,0 +1,34 @@
+[
+  {
+    "row_index": 2950,
+    "id": "299",
+    "reasons": [
+      "empty_summary"
+    ],
+    "available_fields": [
+      "document",
+      "id",
+      "summary"
+    ],
+    "document_type": "str",
+    "summary_type": "str",
+    "document_characters": 13454,
+    "summary_characters": 0
+  },
+  {
+    "row_index": 6911,
+    "id": "4799",
+    "reasons": [
+      "empty_summary"
+    ],
+    "available_fields": [
+      "document",
+      "id",
+      "summary"
+    ],
+    "document_type": "str",
+    "summary_type": "str",
+    "document_characters": 1385,
+    "summary_characters": 0
+  }
+]

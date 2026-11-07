@@ -1,0 +1,82 @@
+[
+  {
+    "policy": {
+      "neural_mode": "dense",
+      "dense_weight": 1.0,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.19232907170650362
+  },
+  {
+    "policy": {
+      "neural_mode": "dense",
+      "dense_weight": 0.75,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.22012229016120066
+  },
+  {
+    "policy": {
+      "neural_mode": "dense",
+      "dense_weight": 0.5,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.2112284602556976
+  },
+  {
+    "policy": {
+      "neural_mode": "dense",
+      "dense_weight": 0.25,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.16564758198999444
+  },
+  {
+    "policy": {
+      "neural_mode": "late",
+      "dense_weight": 1.0,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.1867704280155642
+  },
+  {
+    "policy": {
+      "neural_mode": "late",
+      "dense_weight": 0.75,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.2301278488048916
+  },
+  {
+    "policy": {
+      "neural_mode": "late",
+      "dense_weight": 0.5,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.20678154530294607
+  },
+  {
+    "policy": {
+      "neural_mode": "late",
+      "dense_weight": 0.25,
+      "rrf_k": 60,
+      "rrf_depth": 200,
+      "citation_weight": 0.0
+    },
+    "micro_f1_at_7": 0.16675931072818231
+  }
+]

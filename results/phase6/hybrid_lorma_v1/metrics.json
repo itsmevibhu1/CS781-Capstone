@@ -1,0 +1,40 @@
+{
+  "bertscore_f1": 0.8297854065895081,
+  "bertscore_precision": 0.8463184237480164,
+  "bertscore_recall": 0.8139705061912537,
+  "rouge1_f1": 0.3393239040200564,
+  "rougeL_f1": 0.18626586007762064,
+  "cases": 351,
+  "bert_score_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.57.6)",
+  "metric_config": {
+    "model": "roberta-large",
+    "layers": 17,
+    "rescale": false,
+    "idf": false,
+    "rouge_use_stemmer": true
+  },
+  "mean_generated_words": 220.05698005698005,
+  "mean_reference_words": 838.7863247863248,
+  "experiment": "hybrid_lorma",
+  "run_name": "hybrid_lorma",
+  "architecture": "hybrid_prefixlm",
+  "method": "lorma",
+  "best_epoch": 4,
+  "training_complete": true,
+  "full_validation": true,
+  "optimizer_steps": 3340,
+  "training_seconds": 2160.6372363567352,
+  "peak_gpu_memory_bytes": 763048448,
+  "phase1_config": {
+    "vocab_size": 32000,
+    "n_layer": 12,
+    "d_model": 640,
+    "n_head": 10,
+    "d_ff": 2560,
+    "max_len": 1152
+  },
+  "selected_phase1_layers": null,
+  "total_parameters": 99630720,
+  "trainable_parameters": 491520,
+  "teacher": null
+}

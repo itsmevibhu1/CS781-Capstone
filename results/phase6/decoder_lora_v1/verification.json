@@ -1,0 +1,11 @@
+{
+  "checkpoint_reload_text_match": true,
+  "checkpoint_reload_scores_match": true,
+  "json_metric_roundtrip": true,
+  "one_summary_per_test_document": true,
+  "original_ids_preserved": true,
+  "zip_verified": true,
+  "training_complete": true,
+  "full_validation": true,
+  "private_test_score": null
+}
