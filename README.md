@@ -28,21 +28,21 @@ Install dependencies using each notebook's installation cell. A locked environme
 
 ## Artifact storage
 
-Large artifacts remain in Google Drive:
+Saved configurations, metrics, histories, verification reports, and available plots are included in this repository under `results/`. Cloning the repository downloads these committed results.
 
-| Drive path relative to MyDrive | Purpose |
-| --- | --- |
-| `cs781_phase1/` | Phase 1 tokenizer, architecture run folders, and pretrained checkpoints |
-| `cs781_phase2/` | Phase 2 experiment outputs |
-| `cs781_phase3/` | Phase 3 experiment outputs |
-| `cs781_phase4/` | Phase 4 experiment outputs |
-| `cs781_phase5/` | Phase 5 experiment outputs |
-| `cs781_phase6/` | Phase 6 outputs in the user’s Drive |
-| `cs781_phase7/` | Phase 7 outputs in the friend’s Drive; not yet copied into the user’s account |
+| Phase | Results included in this repository | Runtime Drive directory |
+| --- | --- | --- |
+| 1 | [Loss plots and documented evidence gaps](results/phase1/) | `MyDrive/cs781_phase1/` |
+| 2 | [Configurations, validation metrics, and plots](results/phase2/) | `MyDrive/cs781_phase2/` |
+| 3 | [Configurations, development metrics, and plots](results/phase3/) | `MyDrive/cs781_phase3/` |
+| 4 | [Configurations, development metrics, and plots](results/phase4/) | `MyDrive/cs781_phase4/` |
+| 5 | [Configurations, development metrics, and plots](results/phase5/) | `MyDrive/cs781_phase5/` |
+| 6 | [Configurations, held-out metrics, and plots](results/phase6/) | `MyDrive/cs781_phase6/` |
+| 7 | [Configurations, retrieval metrics, plots, and BM25 baseline](results/phase7/) | `MyDrive/cs781_phase7/` |
 
-The shared local tokenizer files are in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–7 expect the Phase 1 tokenizer and checkpoints in Drive; cloning this repository alone does not provide the weights. Expected checkpoint paths for the documented Phase 1–7 folders are recorded in the experiment ledger. Drive access instructions and checkpoint hashes still need to be supplied.
+The Drive paths above are input/output locations used by the Colab notebooks. Model weights, checkpoints, datasets, caches, prediction/probability files, embeddings, and submission archives are excluded from Git and stored separately. Their Drive paths do not grant download access; checkpoint access instructions and checksums still need to be supplied for reproducing trained runs.
 
-Checkpoints, datasets, prediction archives, and executed notebook copies are excluded from new Git additions. Small metric/configuration files and selected plots can be copied into `results/phaseN/<experiment>_<run_tag>/` when available. Review files for credentials and dataset text before adding them.
+The shared tokenizer vocabulary and merges are included in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–7 load Phase 1 checkpoints and the paired tokenizer from their configured runtime paths. An [experiment ledger](experiments/runs.csv) links saved runs to their repository configurations and expected external checkpoint locations.
 
 ## Experiment records and results
 
@@ -69,8 +69,8 @@ Keep competition solutions private and provide instructor access according to co
 
 ## Results
 
-[Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1 historical settings and scores remain unrecorded; Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
+[Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1’s official best result matches the lightweight saved run by exact prediction content; achieved token totals and numeric histories remain unrecorded. Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
 
 Phase 4 and Phase 5 each contain six documented runs with saved configurations, development scores, coverage, plots, and verification. See [Phase 4 results](results/phase4/) and [Phase 5 results](results/phase5/).
 
-Phase 6 includes six trained summarization runs with final evaluation on all 351 held-out documents. Phase 7 includes six trained retrieval runs and a separate BM25 baseline; its artifacts were exported from the friend’s Drive. See [Phase 6 results](results/phase6/) and [Phase 7 results](results/phase7/).
+Phase 6 includes six trained summarization runs with final evaluation on all 351 held-out documents. Phase 7 includes six trained retrieval runs and a separate BM25 baseline, with their saved evidence included in the repository. See [Phase 6 results](results/phase6/) and [Phase 7 results](results/phase7/).
