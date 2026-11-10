@@ -2,7 +2,7 @@
 
 ## Available evidence
 
-This folder contains the saved loss plot exported from `MyDrive/cs781_phase1/run_lightweight/`. The folder name identifies the lightweight transformer run. No run configuration, numeric history, model metadata, verification report, or evaluation score was included in this export. See the [export manifest](../export_manifest.json).
+This folder contains the saved loss plot exported from `run_lightweight/`. The folder name identifies the lightweight transformer run. No run configuration, numeric history, model metadata, verification report, or evaluation score was included in this export. See the [export manifest](../export_manifest.json).
 
 ![Saved loss curve](loss_curve.png)
 
@@ -16,8 +16,12 @@ Preserve the notebook version, configuration cell output, or training logs actua
 
 ## Artifact location and remaining records
 
-The expected final checkpoint path, following the notebook’s layout, is `MyDrive/cs781_phase1/run_lightweight/final_model.pt`. Weights and prediction/submission files remain outside Git. This path has not been independently verified and does not grant access. The tokenizer is shared under `MyDrive/cs781_phase1/bpe_tokenizer/`; its exact pairing with this historical checkpoint still needs confirmation.
+Weights and prediction/submission files are excluded from Git. The tokenizer pairing with this historical checkpoint still needs confirmation.
 
-Record the actual Codabench submission ID, acceptance, BERTScore F1, and secondary metrics from your competition records. They are currently unavailable here. Do not substitute downstream task scores for Phase 1 evaluation.
+## Matched official best submission
+
+Codabench submission **962785** (user-provided results) records **BERTScore F1 0.83094329**, **ROUGE-L F1 0.19069432**, **BLEU-4 0.03978785**, **1,000 examples**, and reported rank **75**. The author confirmed **4 distinct valid submissions**; the rank-recording date remains unconfirmed.
+
+Both this run’s `prediction.json` and `submission.zip` have exactly the same prediction content as the downloaded official submission. The [match report](../best_submission_match.json) found only this run folder among eight compared artifacts, with no errors. These two file matches identify one saved run. No model weights were loaded for this comparison. The [official result record](../official_best.json) preserves fingerprints and the scope of this attribution; historical code/version and checkpoint-weight checksums remain unverified.
 
 [All Phase 1 results](../) · [All results](../../)

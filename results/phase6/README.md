@@ -25,6 +25,12 @@ BERTScore uses `roberta-large`, layer 17, no IDF and no baseline rescaling; scor
 - [export_manifest.json](export_manifest.json)
 - [split_manifest.json](split_manifest.json)
 
-Coverage files report local method/origin/distinct-output checks, with competition acceptance explicitly unverified. Those saved checks are not independently rerun without the Drive artifacts.
+Coverage files report local method/origin/distinct-output checks, with competition acceptance explicitly unverified. Those saved checks are not independently rerun without the original runtime artifacts.
 
 [Implementation](../../Phase6/README.md) · [Experiment ledger](../../experiments/runs.csv) · [All results](../)
+
+## Matched official best submission
+
+Submission **1022146**, reported rank **76**, has displayed **BERTScore F1 0.8361**, **ROUGE-1 F1 0.3424**, and **ROUGE-L F1 0.1894**. These four-decimal leaderboard values are official test results, separate from the full 351-document held-out metrics above and the 128-document checkpoint-selection metrics. The reference ZIP contains **100 summaries**.
+
+The author confirmed **6 distinct valid submissions**; rank-recording date remains unconfirmed. [official_best.json](official_best.json) preserves the supplied metrics and archive/prediction fingerprints. **Matched run: `decoder_lora_v1`, decoder-only architecture with LoRA.** The [match evidence](best_submission_match.json) compares 12 prediction artifacts without errors. Both this run’s JSON and ZIP match all 100 official summaries, and no other compared run matches. Its saved configuration checksum agrees locally. Identification used exact summary content rather than score similarity; checkpoint weights were not loaded.

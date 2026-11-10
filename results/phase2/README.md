@@ -47,3 +47,9 @@ Highest saved validation macro-F1: **0.48045**, from `decoder_full_v4`. These ar
 The export manifest records included and missing artifacts. Per-label scores are available in each run’s metrics JSON and README even though no standalone per-label CSV was exported.
 
 [Phase 2 implementation](../../Phase2/README.md) · [Experiment ledger](../../experiments/runs.csv) · [All results](../)
+
+## Matched official best submission
+
+The user supplied submission **978578**, reported rank **88**, with displayed **strict Macro-F1 0.4775**, **strict Macro-Precision 0.4685**, and **strict Macro-Recall 0.4946**. These are four-decimal leaderboard values; unrounded detailed results have not been supplied. The submitted JSON contains **35 documents** and **4,263 entity spans**.
+
+[official_best.json](official_best.json) records the screenshots and ZIP/prediction fingerprints. **Matched run: `decoder_full_v3`, decoder-only architecture with full fine-tuning.** The [match report](best_submission_match.json) compares 28 saved prediction artifacts without errors. Both this run’s `prediction.json` and `submission.zip` match all 35 official document predictions; no other compared run matches. Its reported saved configuration checksum also matches the local `run_config.json`. Weights were not loaded for this identification. The author confirmed **16 distinct valid submissions**. The rank-recording date remains pending.

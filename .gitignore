@@ -16,7 +16,7 @@ __pycache__/
 venv/
 .pytest_cache/
 
-# Model weights, training states, and large archives live in Drive.
+# Exclude model weights, training states, and large archives.
 *.pt
 *.pth
 *.ckpt

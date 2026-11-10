@@ -75,7 +75,7 @@ Full scores: [metrics.json](metrics.json). Per-label results: [per_label_metrics
 
 The saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, development JSON round-trip, label vocabulary, test ID/order, submission ZIP round-trip, and train/dev/test separation checks. These saved checks do not establish Codabench acceptance.
 
-Recorded test output coverage: 10 documents and 2,197 sentences. Checkpoints are expected at `MyDrive/cs781_phase3/lightweight_kd_v1/best_model.pt` and `MyDrive/cs781_phase3/lightweight_kd_v1/last.pt`, following the original run-folder layout. These Drive paths have not been independently checked here and do not grant access. Predictions and submission ZIPs remain in Drive.
+Recorded test output coverage: 10 documents and 2,197 sentences. Checkpoint files are excluded from Git and have not been independently checked here. Predictions and submission ZIPs are excluded from Git.
 
 Training history: [history.json](history.json). Class weights: [loss_class_weights.json](loss_class_weights.json).
 

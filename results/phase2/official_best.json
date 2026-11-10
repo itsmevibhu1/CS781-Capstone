@@ -1,0 +1,53 @@
+{
+  "phase": 2,
+  "codabench_username": "v_231145",
+  "submission_id": 978578,
+  "submission_timestamp_displayed": "2026-10-11 22:50",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "Strict Macro-F1",
+    "value": 0.4775,
+    "precision": "displayed to four decimal places; unrounded value not supplied"
+  },
+  "secondary_metrics": {
+    "Strict Macro-Precision": 0.4685,
+    "Strict Macro-Recall": 0.4946
+  },
+  "secondary_metric_precision": "displayed to four decimal places; unrounded values not supplied",
+  "evaluated_documents_from_archive": 35,
+  "predicted_entities_from_archive": 4263,
+  "reported_rank": 88,
+  "rank_recorded_date": null,
+  "finished_submissions_shown": 16,
+  "valid_distinct_submission_count": 16,
+  "source": "User-provided leaderboard and finished-submission screenshots, received 2026-11-09.",
+  "archive_filename": "phase2_best.zip",
+  "archive_sha256": "ae594c2135b5230298bab97767f56c4a91dc2a714f8cddc25580ee89b7d38245",
+  "prediction_file_sha256": "9e307b6c1ea0408c48405e07d5a1258b336af4bfd6400f5a96db2f5fc76bdc15",
+  "prediction_canonical_sha256": "89d16693374b74a706ebc39375096d89df527234d2d971203f77f6b009326178",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "decoder_only",
+    "adaptation": "full",
+    "experiment": "decoder_full",
+    "run_tag": "v3",
+    "run_folder": "decoder_full_v3",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "db0df0243f3b06a0bd77e08c85e9bd5c1ce1c00289a6eaf4391f06e29afb76c9",
+    "compared_files": 28,
+    "matched_files": [
+      "decoder_full_v3/prediction.json",
+      "decoder_full_v3/submission.zip"
+    ],
+    "run_config_sha256": "0fe6491674eafac7065a0b4d31c7c82af9616dd4567539ad595dc568014b9be6",
+    "local_run_config_checksum_matches": true,
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both matching files belong to decoder_full_v3; all 35 document predictions match the downloaded official submission. No other compared run matched. Local run_config.json checksum matches the reported configuration. Weights and original training commit remain unverified.",
+    "checkpoint_filename": "best_model.pt"
+  },
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed the finished submissions shown for Phases 1\u20133 were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  }
+}

@@ -29,7 +29,7 @@ The smaller student is initialized from the recorded Phase 1 blocks and trained 
 | Dropout / weight decay | 0.15 / 0.01 |
 | Warmup fraction / patience | 0.1 / 3 |
 | Phase 1 block indices | `[0, 2, 4, 6, 8, 10]` |
-| Recorded teacher run | `/content/drive/MyDrive/cs781_phase4/decoder_full_v1` |
+| Recorded teacher run | `decoder_full_v1` |
 | KD weight / temperature | 0.5 / 2.0 |
 
 Exact settings: [run_config.json](run_config.json). Original architecture, adapter targets, parameter counts, selected blocks, and teacher metadata: [model_metadata.json](model_metadata.json). Class/label weights: [class_weights.json](class_weights.json). Common adapter/KD defaults apply only to methods that use them.
@@ -70,6 +70,6 @@ Only a sampled portion of long documents may be represented. Saved coverage is n
 
 [verification.json](verification.json) reports training complete and passing checkpoint-reload, dev JSON round-trip, original test ID/type, output-format, ZIP, and separation checks. These are saved reports, not a fresh official-data evaluation or proof of competition acceptance.
 
-Expected checkpoint: `MyDrive/cs781_phase4/lightweight_kd_v1/best_model.pt`. This path follows the original folder layout and has not been independently checked. Weights, predictions, probability arrays, caches, and submission ZIPs remain in Drive. [history.json](history.json) preserves the numeric training history. No standalone environment report was exported.
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 4 results](../) · [All results](../../)

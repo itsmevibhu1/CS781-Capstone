@@ -2,7 +2,7 @@
 
 ## Available evidence
 
-This folder contains the saved loss plot exported from `MyDrive/cs781_phase1/run_decoder_only/`. The folder name identifies the decoder-only transformer run. No run configuration, numeric history, model metadata, verification report, or evaluation score was included in this export. See the [export manifest](../export_manifest.json).
+This folder contains the saved loss plot exported from `run_decoder_only/`. The folder name identifies the decoder-only transformer run. No run configuration, numeric history, model metadata, verification report, or evaluation score was included in this export. See the [export manifest](../export_manifest.json).
 
 ![Saved loss curve](loss_curve.png)
 
@@ -16,7 +16,7 @@ Preserve the notebook version, configuration cell output, or training logs actua
 
 ## Artifact location and remaining records
 
-The expected final checkpoint path, following the notebook’s layout, is `MyDrive/cs781_phase1/run_decoder_only/final_model.pt`. Weights and prediction/submission files remain outside Git. This path has not been independently verified and does not grant access. The tokenizer is shared under `MyDrive/cs781_phase1/bpe_tokenizer/`; its exact pairing with this historical checkpoint still needs confirmation.
+Weights and prediction/submission files are excluded from Git. The tokenizer pairing with this historical checkpoint still needs confirmation.
 
 Record the actual Codabench submission ID, acceptance, BERTScore F1, and secondary metrics from your competition records. They are currently unavailable here. Do not substitute downstream task scores for Phase 1 evaluation.
 

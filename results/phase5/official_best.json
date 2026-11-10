@@ -1,0 +1,53 @@
+{
+  "phase": 5,
+  "codabench_username": "v_231145",
+  "submission_id": 1011686,
+  "submission_timestamp_displayed": "2026-10-27 09:06",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "Macro-F1",
+    "value": 0.3622,
+    "precision": "displayed to four decimal places; unrounded value not supplied"
+  },
+  "secondary_metrics": {
+    "Micro-F1": 0.4565,
+    "Subset Accuracy": 0.0336
+  },
+  "secondary_metric_precision": "displayed to four decimal places",
+  "evaluated_cases_from_archive": 13019,
+  "predicted_statute_assignments_from_archive": 67723,
+  "reported_rank": 80,
+  "rank_recorded_date": null,
+  "finished_submissions_shown": 6,
+  "valid_distinct_submission_count": 6,
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed all six Finished submissions were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  },
+  "source": "User-provided Codabench leaderboard and finished-submission screenshots, received 2026-11-09.",
+  "archive_filename": "phase5_best.zip",
+  "archive_sha256": "ee00079f8478bf7e6e5f2fc8b153f889bf7318ac3b25a97430d136e3f39ad8c1",
+  "prediction_file_sha256": "bfeab47dc6b2d8f377ff8e420b033b0d5b4fd2ac7740081f78cb00e604088fca",
+  "prediction_canonical_sha256": "20dc830324d12382f974806d176c189244d9a028f1bd15945d1dee01b3a7b74c",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "lightweight",
+    "adaptation": "kd",
+    "experiment": "lightweight_kd",
+    "run_tag": "v1",
+    "run_folder": "lightweight_kd_v1",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "23ead36e81065deb4bd7f4bc86f25c82b4fbd5dd0154bcf73531132fabb3786a",
+    "compared_files": 12,
+    "matched_files": [
+      "lightweight_kd_v1/prediction.json",
+      "lightweight_kd_v1/submission.zip"
+    ],
+    "run_config_sha256": "347f69449790245c457e9ad5448a397318a1349a497c4b61b09ffde47b99bfc0",
+    "local_run_config_checksum_matches": true,
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both prediction artifacts match all 13,019 official case predictions; only one run folder matched among 12 compared artifacts, without errors. Local saved configuration checksum agrees. Weights and original training commit remain unverified.",
+    "checkpoint_filename": "best_model.pt"
+  }
+}

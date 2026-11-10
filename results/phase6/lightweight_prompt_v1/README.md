@@ -84,6 +84,8 @@ Reference-budget fractions describe target-length limitations, not a claim that 
 
 ## Artifact storage
 
-Expected checkpoint path: `MyDrive/cs781_phase6/lightweight_prompt_v1/best_model.pt` in your Drive account. The checkpoint path is recorded from the original folder layout and has not been independently verified. Weights, embeddings, predictions/generated summaries, caches and submission ZIPs remain outside Git.
+The configuration, metrics, history, verification, available plots, and task-specific policy files in this folder are included in the repository.
+
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 6 results](../) · [All results](../../)

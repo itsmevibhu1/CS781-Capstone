@@ -2,19 +2,19 @@
 
 Open [CS781_Phase6_Solution_Colab.ipynb](CS781_Phase6_Solution_Colab.ipynb) in Colab, select a GPU, add a secret named **HF** containing your plain `hf_...` token, and run cells in order. The notebook embeds all runtime code; no local Python modules need uploading.
 
-The implementation follows **§12 of the capstone PDF**, the professor's Phase 1 starter progression and the earlier phases' Drive/authentication/checkpoint workflow. Unlike Phase 5 classification, it retains and adapts the full pretrained generation head. The encoder–decoder model retains both its pretrained encoder and decoder. No external summarization model or LLM API supplies outputs or training targets.
+The implementation follows **§12 of the capstone PDF**, the professor's Phase 1 starter progression and the earlier phases' authentication and checkpoint workflow. Unlike Phase 5 classification, it retains and adapts the full pretrained generation head. The encoder–decoder model retains both its pretrained encoder and decoder. No external summarization model or LLM API supplies outputs or training targets.
 
 ## Inputs and data split
 
-Drive inputs:
+Required inputs:
 
 ```text
-MyDrive/cs781_phase1/bpe_tokenizer/vocab.json
-MyDrive/cs781_phase1/bpe_tokenizer/merges.txt
-MyDrive/cs781_phase1/run_decoder_only/final_model.pt
-MyDrive/cs781_phase1/run_encoder_decoder/final_model.pt
-MyDrive/cs781_phase1/run_hybrid_prefixlm/final_model.pt
-MyDrive/cs781_phase1/run_lightweight/final_model.pt
+bpe_tokenizer/vocab.json
+bpe_tokenizer/merges.txt
+run_decoder_only/final_model.pt
+run_encoder_decoder/final_model.pt
+run_hybrid_prefixlm/final_model.pt
+run_lightweight/final_model.pt
 ```
 
 The Phase 6 dataset has **two official files**, not three:
@@ -106,7 +106,7 @@ The full held-out set includes selection cases and is not an untouched independe
 ## Saved outputs
 
 ```text
-MyDrive/cs781_phase6/<experiment>_<RUN_TAG>/
+<experiment>_<RUN_TAG>/
 ```
 
 Each run saves configuration, model/teacher metadata, source/target coverage, `last.pt`, `best_model.pt`, history, fixed-selection manifest, selected validation predictions/scores, final `metrics.json`, full `validation_prediction.json`, generation settings, curves, verification JSON and submission files. Token caches, loading/split manifests, `experiment_summary.csv`, `coverage.json` and `best_per_architecture.json` live at the project root.
@@ -123,10 +123,16 @@ Submission format:
 
 Build with `python Phase6/build_phase6_notebook.py`. Test with `python Phase6/validate_phase6_notebook.py` in an environment containing torch, tokenizers, numpy, nbformat, matplotlib, tqdm, huggingface_hub, transformers, bert-score and rouge-score.
 
-The original local Phase 1 checkpoints were removed during disk cleanup. Tests create small compatible checkpoints for all four original classes, verify strict loading and computation equivalence, then exercise every profile and complete synthetic pipelines. The real BERTScore API is tested with a tiny randomly initialized local metric model; its scores are **not task performance**. Real Drive checkpoints, RoBERTa-large scoring, official file contents and Colab CUDA execution remain runtime checks. See [VALIDATION.md](VALIDATION.md).
+The original local Phase 1 checkpoints were removed during disk cleanup. Tests create small compatible checkpoints for all four original classes, verify strict loading and computation equivalence, then exercise every profile and complete synthetic pipelines. The real BERTScore API is tested with a tiny randomly initialized local metric model; its scores are **not task performance**. Actual trained checkpoints, RoBERTa-large scoring, official file contents and Colab CUDA execution remain runtime checks. See [VALIDATION.md](VALIDATION.md).
 
 ## Saved run results
 
 [Browse Phase 6 results](../results/phase6/) for six trained runs, saved settings, metric comparisons, coverage limits, plots and verification. Historical training commits and Codabench scores/IDs remain unavailable. See the [experiment ledger](../experiments/runs.csv).
 
 Phase 6 checkpoints were selected on 128 held-out documents; final scores cover all 351. The saved scorer configuration and exact split are recorded with the results.
+
+Saved result files are included in `results/phase6/`. the exported configurations, metrics, histories, and plots are committed in the repository.
+
+## Official result identification
+
+The [Phase 6 result index](../results/phase6/) records submission 1022146, displayed official BERTScore F1 0.8361, reported rank 76, and 6 author-confirmed distinct valid submissions. Exact matching identifies `decoder_lora_v1`: decoder-only architecture, LoRA, tag `v1`. Both saved prediction artifacts match all 100 submitted summaries among 12 compared files without errors. The configuration checksum matches locally; see the [match evidence](../results/phase6/best_submission_match.json).

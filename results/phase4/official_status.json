@@ -1,0 +1,15 @@
+{
+  "phase": 4,
+  "submission_status": "not_submitted",
+  "official_score": null,
+  "rank": null,
+  "valid_distinct_submission_count": 0,
+  "source": "Author confirmed on 2026-11-09 that no Phase 4 Codabench submission was made.",
+  "local_selection": {
+    "run_folder": "lightweight_lorma_v1",
+    "criterion": "highest saved development macro-F1 among six imported runs",
+    "development_macro_f1": 0.6823266219239373,
+    "official_test_winner": false,
+    "checkpoint_reloaded": false
+  }
+}

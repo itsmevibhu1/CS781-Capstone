@@ -33,7 +33,7 @@ The generation model retains its pretrained language-model output head. The enco
 
 Exact settings: [run_config.json](run_config.json). Original architecture, parameter counts, selected blocks and teacher metadata: [model_metadata.json](model_metadata.json). Common adapter/KD settings apply only to the chosen method.
 
-Recorded teacher run: `/content/drive/MyDrive/cs781_phase6/decoder_lora_v1`. Its saved metadata reports 110,860,800 parameters, larger than the student. Distillation uses token distributions on training references only. The checkpoint was not loaded or independently checked during documentation. Saved file size/time metadata is not a cryptographic checkpoint checksum.
+Recorded teacher run: `decoder_lora_v1`. Its saved metadata reports 110,860,800 parameters, larger than the student. Distillation uses token distributions on training references only. The checkpoint was not loaded or independently checked during documentation. Saved file size/time metadata is not a cryptographic checkpoint checksum.
 
 ## Evaluation results
 
@@ -87,6 +87,8 @@ Reference-budget fractions describe target-length limitations, not a claim that 
 
 ## Artifact storage
 
-Expected checkpoint path: `MyDrive/cs781_phase6/lightweight_kd_v1/best_model.pt` in your Drive account. The checkpoint path is recorded from the original folder layout and has not been independently verified. Weights, embeddings, predictions/generated summaries, caches and submission ZIPs remain outside Git.
+The configuration, metrics, history, verification, available plots, and task-specific policy files in this folder are included in the repository.
+
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 6 results](../) · [All results](../../)

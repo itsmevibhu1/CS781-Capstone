@@ -1,0 +1,54 @@
+{
+  "phase": 3,
+  "codabench_username": "v_231145",
+  "submission_id": 992321,
+  "submission_timestamp_displayed": "2026-10-16 12:55",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "Macro-F1",
+    "value": 0.429,
+    "precision": "displayed to four decimal places; unrounded value not supplied"
+  },
+  "secondary_metrics": {
+    "Macro-Precision": 0.4887,
+    "Macro-Recall": 0.4309
+  },
+  "secondary_metric_precision": "displayed to four decimal places",
+  "evaluated_documents_from_archive": 10,
+  "predicted_sentences_from_archive": 2197,
+  "reported_rank": 110,
+  "rank_recorded_date": null,
+  "finished_submissions_shown": 8,
+  "valid_distinct_submission_count": 8,
+  "source": "User-provided Codabench leaderboard and finished-submission screenshots, received 2026-11-09.",
+  "archive_filename": "phase3_best.zip",
+  "archive_sha256": "bf11feb3874d64293520b1ccf6abaefc1be2dc58eb0369aeb08171019272bdb8",
+  "prediction_file_sha256": "6318590575bfe005bd6b58250401b679884e30181c38af1daf805105dc00a627",
+  "prediction_canonical_sha256": "50a528097f5fa8fe2763cdc61718369648689401fe7c4eaa9d73d4f9b2274619",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "lightweight",
+    "adaptation": "kd",
+    "experiment": "lightweight_kd",
+    "run_tag": "kd_context2",
+    "run_folder": "lightweight_kd_kd_context2",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "3e6d8f848dec441c18b598976c01816c7087f3256c1ce0ba1fa2e9243bcee85d",
+    "compared_files": 16,
+    "matched_files": [
+      "lightweight_kd_kd_context2/prediction.json",
+      "lightweight_kd_kd_context2/submission.zip"
+    ],
+    "run_config_sha256": "8557f5b3c5458d2e2c495c00da4d084efb0bde3587a821d9983b47ea091652d3",
+    "local_run_config_checksum_matches": true,
+    "context_sentences": 2,
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both prediction artifacts match the official submission across all 10 documents/2,197 ordered role labels. Only one run folder matched among 16 compared files. Configuration checksum matches the local copy. Weights and original training commit remain unverified.",
+    "checkpoint_filename": "best_model.pt"
+  },
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed the finished submissions shown for Phases 1\u20133 were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  }
+}

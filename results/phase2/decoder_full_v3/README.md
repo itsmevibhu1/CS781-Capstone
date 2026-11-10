@@ -89,8 +89,14 @@ Checkpoint-selection scores: [best_validation_metrics.json](best_validation_metr
 
 ## Verification and remaining records
 
-The saved [verification.json](verification.json) reports passing validation, prediction ID/offset, and ZIP/JSON checks. The saved [post-training validation report](post_training_validation.json) reports checkpoint-reload agreement, validation schema/ID checks, JSON round-trip, and support-count verification. Decode evidence: [decoder_config.json](decoder_config.json) and [decoding_candidates.json](decoding_candidates.json). Saved class weights: [loss_class_weights.json](loss_class_weights.json). The metrics record training complete, but neither that flag nor exported verification establishes Codabench acceptance. The private test score and submission ID have not been recorded.
+The saved [verification.json](verification.json) reports passing validation, prediction ID/offset, and ZIP/JSON checks. The saved [post-training validation report](post_training_validation.json) reports checkpoint-reload agreement, validation schema/ID checks, JSON round-trip, and support-count verification. Decode evidence: [decoder_config.json](decoder_config.json) and [decoding_candidates.json](decoding_candidates.json). Saved class weights: [loss_class_weights.json](loss_class_weights.json). The metrics record training complete, but neither that flag nor exported verification establishes Codabench acceptance. The official result is recorded below; the author confirmed 16 distinct valid submissions; the rank-recording date remains pending.
 
-Expected checkpoint: `MyDrive/cs781_phase2/decoder_full_v3/best_model.pt`, following the original folder layout. This path has not been independently verified. Weights, predictions, and submission ZIPs remain in Drive. Historical code commits, checkpoint checksums, and teacher checkpoint hashes where applicable still need recording.
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 2 results](../) · [All results](../../)
+
+## Matched official submission
+
+This run matches Codabench submission **978578**, reported rank **88**, displayed **strict Macro-F1 0.4775**, **Macro-Precision 0.4685**, and **Macro-Recall 0.4946**. These official metrics are rounded to four decimal places. Its local held-out validation Macro-F1 is **0.47662895373213443**; this is a separate split/score and must not replace the official value.
+
+The [match evidence](../best_submission_match.json) found exact prediction content matches for this run’s JSON and ZIP among 28 artifacts with no errors. The configuration checksum matches this folder’s [run_config.json](run_config.json). These identify one run, not two competing matches. The [official record](../official_best.json) preserves the reference fingerprints. The checkpoint and historical training commit were not independently verified.

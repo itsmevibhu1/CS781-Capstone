@@ -1,0 +1,36 @@
+{
+  "phase": 6,
+  "expected_canonical_sha256": "eef3b39163cbb9be2acb3da22fb9f6972d7b2762af62e0a10ed31612528ff9ac",
+  "expected_examples": 100,
+  "compared_files": 12,
+  "matches": [
+    {
+      "relative_path": "decoder_lora_v1/prediction.json",
+      "examples": 100,
+      "canonical_sha256": "eef3b39163cbb9be2acb3da22fb9f6972d7b2762af62e0a10ed31612528ff9ac",
+      "run_folder": "decoder_lora_v1",
+      "experiment": "decoder_lora",
+      "run_tag": "v1",
+      "architecture_from_run_config": "decoder_only",
+      "adaptation_from_run_config": "lora",
+      "run_config_sha256": "307bb24e5052cc3701cd6e2036b8e2fa5bf83c47a54df2eb6aa7e683eea9da86"
+    },
+    {
+      "relative_path": "decoder_lora_v1/submission.zip",
+      "examples": 100,
+      "canonical_sha256": "eef3b39163cbb9be2acb3da22fb9f6972d7b2762af62e0a10ed31612528ff9ac",
+      "run_folder": "decoder_lora_v1",
+      "experiment": "decoder_lora",
+      "run_tag": "v1",
+      "architecture_from_run_config": "decoder_only",
+      "adaptation_from_run_config": "lora",
+      "run_config_sha256": "307bb24e5052cc3701cd6e2036b8e2fa5bf83c47a54df2eb6aa7e683eea9da86"
+    }
+  ],
+  "errors": [],
+  "note": "Prediction matches identify saved artifacts. Multiple matches do not uniquely identify the original generating model. No weights loaded.",
+  "matched_run_folders": [
+    "decoder_lora_v1"
+  ],
+  "status": "one_matched_run_folder"
+}

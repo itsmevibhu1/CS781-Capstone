@@ -1,0 +1,36 @@
+{
+  "phase": 2,
+  "expected_canonical_sha256": "89d16693374b74a706ebc39375096d89df527234d2d971203f77f6b009326178",
+  "expected_examples": 35,
+  "compared_files": 28,
+  "matches": [
+    {
+      "relative_path": "decoder_full_v3/prediction.json",
+      "examples": 35,
+      "canonical_sha256": "89d16693374b74a706ebc39375096d89df527234d2d971203f77f6b009326178",
+      "run_folder": "decoder_full_v3",
+      "experiment": "decoder_full",
+      "run_tag": "v3",
+      "architecture_from_run_config": "decoder_only",
+      "adaptation_from_run_config": "full",
+      "run_config_sha256": "0fe6491674eafac7065a0b4d31c7c82af9616dd4567539ad595dc568014b9be6"
+    },
+    {
+      "relative_path": "decoder_full_v3/submission.zip",
+      "examples": 35,
+      "canonical_sha256": "89d16693374b74a706ebc39375096d89df527234d2d971203f77f6b009326178",
+      "run_folder": "decoder_full_v3",
+      "experiment": "decoder_full",
+      "run_tag": "v3",
+      "architecture_from_run_config": "decoder_only",
+      "adaptation_from_run_config": "full",
+      "run_config_sha256": "0fe6491674eafac7065a0b4d31c7c82af9616dd4567539ad595dc568014b9be6"
+    }
+  ],
+  "errors": [],
+  "note": "Prediction matches identify saved artifacts. Multiple matches do not uniquely identify the original generating model. No weights loaded.",
+  "matched_run_folders": [
+    "decoder_full_v3"
+  ],
+  "status": "one_matched_run_folder"
+}

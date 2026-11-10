@@ -1,0 +1,52 @@
+{
+  "phase": 6,
+  "codabench_username": "v_231145",
+  "submission_id": 1022146,
+  "submission_timestamp_displayed": "2026-10-31 00:25",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "BERTScore F1",
+    "value": 0.8361,
+    "precision": "displayed to four decimal places; unrounded value not supplied"
+  },
+  "secondary_metrics": {
+    "ROUGE-1 F1": 0.3424,
+    "ROUGE-L F1": 0.1894
+  },
+  "secondary_metric_precision": "displayed to four decimal places",
+  "predicted_documents_from_archive": 100,
+  "reported_rank": 76,
+  "rank_recorded_date": null,
+  "finished_submissions_shown": 6,
+  "valid_distinct_submission_count": 6,
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed all six Finished Phase 6 submissions were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  },
+  "source": "User-provided Codabench leaderboard and finished-submission screenshots, received 2026-11-09.",
+  "archive_filename": "phase6_best.zip",
+  "archive_sha256": "53e1efa5fdd9e24e8c948fc1c6b304499a8af508bb6c92a86a30b9433c7828a4",
+  "prediction_file_sha256": "593a074894d7feb821de17c6455f48cb2603b95ecc49ec208d8778b442377d3d",
+  "prediction_canonical_sha256": "eef3b39163cbb9be2acb3da22fb9f6972d7b2762af62e0a10ed31612528ff9ac",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "decoder_only",
+    "adaptation": "lora",
+    "experiment": "decoder_lora",
+    "run_tag": "v1",
+    "run_folder": "decoder_lora_v1",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "5c3fe7180dbfaf3f591a4a9c7f19ae02e4bc8b80da55447e3ba71fb9e60c3a3c",
+    "compared_files": 12,
+    "matched_files": [
+      "decoder_lora_v1/prediction.json",
+      "decoder_lora_v1/submission.zip"
+    ],
+    "run_config_sha256": "307bb24e5052cc3701cd6e2036b8e2fa5bf83c47a54df2eb6aa7e683eea9da86",
+    "local_run_config_checksum_matches": true,
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both prediction artifacts match all 100 official generated summaries, with original IDs and text preserved. Only one run matched among 12 compared files, without errors. Saved run configuration checksum matches locally; weights and original training commit remain unverified.",
+    "checkpoint_filename": "best_model.pt"
+  }
+}

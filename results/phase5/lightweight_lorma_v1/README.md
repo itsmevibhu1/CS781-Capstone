@@ -72,6 +72,6 @@ Only a sampled portion of long documents may be represented. Saved coverage is n
 
 Saved overlap policy: `exclude_train`; remaining train instances matching held-out text: 0. Full split-audit files were not part of this export, so their details are not independently established here.
 
-Expected checkpoint: `MyDrive/cs781_phase5/lightweight_lorma_v1/best_model.pt`. This path follows the original folder layout and has not been independently checked. Weights, predictions, probability arrays, caches, and submission ZIPs remain in Drive. [history.json](history.json) preserves the numeric training history. No standalone environment report was exported.
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 5 results](../) · [All results](../../)

@@ -1,0 +1,36 @@
+{
+  "phase": 3,
+  "expected_canonical_sha256": "50a528097f5fa8fe2763cdc61718369648689401fe7c4eaa9d73d4f9b2274619",
+  "expected_examples": 10,
+  "compared_files": 16,
+  "matches": [
+    {
+      "relative_path": "lightweight_kd_kd_context2/prediction.json",
+      "examples": 10,
+      "canonical_sha256": "50a528097f5fa8fe2763cdc61718369648689401fe7c4eaa9d73d4f9b2274619",
+      "run_folder": "lightweight_kd_kd_context2",
+      "experiment": "lightweight_kd",
+      "run_tag": "kd_context2",
+      "architecture_from_run_config": "lightweight",
+      "adaptation_from_run_config": "kd",
+      "run_config_sha256": "8557f5b3c5458d2e2c495c00da4d084efb0bde3587a821d9983b47ea091652d3"
+    },
+    {
+      "relative_path": "lightweight_kd_kd_context2/submission.zip",
+      "examples": 10,
+      "canonical_sha256": "50a528097f5fa8fe2763cdc61718369648689401fe7c4eaa9d73d4f9b2274619",
+      "run_folder": "lightweight_kd_kd_context2",
+      "experiment": "lightweight_kd",
+      "run_tag": "kd_context2",
+      "architecture_from_run_config": "lightweight",
+      "adaptation_from_run_config": "kd",
+      "run_config_sha256": "8557f5b3c5458d2e2c495c00da4d084efb0bde3587a821d9983b47ea091652d3"
+    }
+  ],
+  "errors": [],
+  "note": "Prediction matches identify saved artifacts. Multiple matches do not uniquely identify the original generating model. No weights loaded.",
+  "matched_run_folders": [
+    "lightweight_kd_kd_context2"
+  ],
+  "status": "one_matched_run_folder"
+}

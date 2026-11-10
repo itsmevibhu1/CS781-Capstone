@@ -2,7 +2,7 @@
 
 Open [CS781_Phase2_Solution_Colab.ipynb](CS781_Phase2_Solution_Colab.ipynb) in Google Colab, select a GPU runtime, and add a Colab secret named **HF** with access to the course dataset.
 
-The notebook mounts Drive. It reads the existing tokenizer and model weights from `MyDrive/cs781_phase1/` and writes all outputs to `MyDrive/cs781_phase2/`.
+The notebook reads the Phase 1 tokenizer and model checkpoints and writes outputs to the configured experiment directory.
 
 Run the notebook once per experiment, changing `EXPERIMENT` in section 3:
 
@@ -52,3 +52,7 @@ Sources are linked in the notebook, including the [LoRMA paper](https://aclantho
 [Browse all 14 Phase 2 runs](../results/phase2/) for saved configurations, strict held-out validation scores, per-label tables, plots, and verification availability. Older runs lack some newer reports. Both partial-encoder runs record zero F1; all run pages preserve measured results, including unsuccessful experiments.
 
 The `v1` and `v3` groups each contain six experiment types, while `v2` and `v4` contain decoder-only variants. Local coverage reports do not establish accepted submissions. Historical code commits and Codabench records remain to be supplied.
+
+## Official result identification
+
+The [Phase 2 result index](../results/phase2/) records submission 978578, displayed official strict Macro-F1 0.4775 and rank 88. Exact matching identifies `decoder_full_v3` (decoder-only, full fine-tuning): its prediction JSON and ZIP both match all 35 submitted document predictions among 28 compared artifacts. The saved run-configuration checksum matches the local copy; see the [match evidence](../results/phase2/best_submission_match.json).

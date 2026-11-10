@@ -29,7 +29,7 @@ The smaller student is initialized from the recorded Phase 1 blocks and trained 
 | Dropout / weight decay | 0.15 / 0.01 |
 | Warmup fraction / patience | 0.1 / 3 |
 | Phase 1 block indices | `[0, 2, 4, 6, 8, 10]` |
-| Recorded teacher run | `/content/drive/MyDrive/cs781_phase5/decoder_full_v1` |
+| Recorded teacher run | `decoder_full_v1` |
 | KD weight / temperature | 0.5 / 2.0 |
 
 Loss: `bce`; metric-label scope: `reference_range`; 100 output labels. Positive-weight cap: 20.0; label smoothing: 0.0; label graph weight: 0.0.
@@ -76,6 +76,12 @@ Only a sampled portion of long documents may be represented. Saved coverage is n
 
 Saved overlap policy: `exclude_train`; remaining train instances matching held-out text: 0. Full split-audit files were not part of this export, so their details are not independently established here.
 
-Expected checkpoint: `MyDrive/cs781_phase5/lightweight_kd_v1/best_model.pt`. This path follows the original folder layout and has not been independently checked. Weights, predictions, probability arrays, caches, and submission ZIPs remain in Drive. [history.json](history.json) preserves the numeric training history. No standalone environment report was exported.
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 5 results](../) · [All results](../../)
+
+## Matched official best submission
+
+Submission **1011686**, reported rank **80**, matches this run’s prediction JSON and ZIP across **13,019 case predictions**. It is the only matching run folder among **12 compared artifacts**, with no errors. The saved configuration checksum agrees with this folder’s [run_config.json](run_config.json). See [matching evidence](../best_submission_match.json) and the [official result record](../official_best.json).
+
+Official displayed scores are **Macro-F1 0.3622**, **Micro-F1 0.4565**, and **Subset Accuracy 0.0336**. These rounded test results are separate from the saved local-dev Macro-F1 **0.38344562397413307**. The author confirmed **6 distinct valid submissions**. The matched configuration records architecture `lightweight`, method `kd`, experiment `lightweight_kd`, and tag `v1`. Checkpoint weights and historical training commits were not independently verified; rank-recording date remains pending.

@@ -1,6 +1,6 @@
 # Phase 4 results
 
-Six saved runs are documented below. Scores use the 0–1 scale and development labels were used for checkpoint and threshold selection. No Codabench score or acceptance is established by these artifacts.
+Six saved runs are documented below. Scores use the 0–1 scale and development labels were used for checkpoint and threshold selection. The author confirmed that no Phase 4 Codabench submission was made; the official score and rank are unavailable, and the valid submission count is zero.
 
 | Run | Origin | Method | Macro-F1 | Class-1 precision | Class-1 recall |
 | --- | --- | --- | ---: | ---: | ---: |
@@ -15,12 +15,12 @@ Highest recorded development macro-F1: **0.68233** from `lightweight_lorma_v1`. 
 
 Phase 4 macro-F1 averages classes 0 and 1; precision/recall in the table are for class 1.
 
-All saved training-complete flags and boolean verification checks pass. Historical training commits, standalone environment reports, and official test scores were not exported. Missing ensemble recipes are expected for these individual-model folders; no ensemble was imported.
+All saved training-complete flags and boolean verification checks pass. Historical training commits and standalone environment reports remain unavailable. Official test scores do not exist for these unsubmitted runs. Missing ensemble recipes are expected for these individual-model folders; no ensemble was imported.
 
 ## Phase-level evidence
 
 - [export_manifest.json](export_manifest.json)
 
-The Phase 4 export contains no root-level experiment summary or coverage report; the table above is built from individual run metrics. Six folders alone do not establish distinct accepted submissions.
+The Phase 4 export contains no root-level experiment summary or coverage report; the table above is built from individual run metrics. These six experiment folders are local runs, not accepted Codabench submissions. See [official_status.json](official_status.json). The code variant selected for the final package is `lightweight_lorma_v1`, using its highest saved development macro-F1 of **0.68233**; this is not an official-test winner.
 
 [Implementation and instructions](../../Phase4/README.md) · [Experiment ledger](../../experiments/runs.csv) · [All results](../)

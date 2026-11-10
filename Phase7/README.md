@@ -6,7 +6,7 @@ This follows §13 of the capstone PDF and the professor's starter sequence: auth
 
 ## Required inputs and all six official files
 
-Phase 1 inputs are the four `MyDrive/cs781_phase1/run_<architecture>/final_model.pt` files and `bpe_tokenizer/vocab.json` / `merges.txt`. Local copies of these weights are not required by Colab.
+Phase 1 inputs are the four `run_<architecture>/final_model.pt` files and `bpe_tokenizer/vocab.json` / `merges.txt`. Local copies of these weights are not required by Colab.
 
 The six competition paths are:
 
@@ -23,7 +23,7 @@ Each query searches **only its own split's candidate pool**. Train relevance sup
 
 Case text can be a string, sentence strings, ordered text objects or a sentence mapping. Original ID strings and leading zeros are preserved. When gold IDs are integers but pool IDs are zero-padded strings, only an unambiguous numeric match is accepted. Missing/ambiguous gold IDs and conflicting duplicate IDs stop with an error instead of being overwritten. Empty texts are audited and receive UNK; all-empty query or candidate sets stop for schema inspection. A candidate pool must have at least seven usable IDs.
 
-The token caches cover all queries/candidates in every split. They are memory-mapped int32 files persisted in Drive and staged to Colab local disk. `dataset_manifest.json` records counts, empty-text counts, gold-ID conversions and train queries without positive supervision. Such train queries cannot form positive-supervised batches, but remain in preprocessing/baseline output. Empty-gold dev queries remain in evaluation. `document_lengths.json` records token-length percentiles.
+The token caches cover all queries/candidates in every split. They are memory-mapped int32 files persisted in configured storage and staged to Colab local disk. `dataset_manifest.json` records counts, empty-text counts, gold-ID conversions and train queries without positive supervision. Such train queries cannot form positive-supervised batches, but remain in preprocessing/baseline output. Empty-gold dev queries remain in evaluation. `document_lengths.json` records token-length percentiles.
 
 ## First run
 
@@ -102,7 +102,7 @@ Validation scores are selection scores, not an untouched independent estimate. I
 All results save automatically to:
 
 ```text
-MyDrive/cs781_phase7/<experiment>_<RUN_TAG>/
+<experiment>_<RUN_TAG>/
 ```
 
 Per run: full configuration, model/teacher metadata, `last.pt`, `best_model.pt`, history, training curves, selected dev policy/predictions/metrics, dense dev metrics, ranking trials, error reports, dev/test embeddings, context coverage, verification JSON and submission files. Root files include the data/loading/token-length manifests, token caches, `experiment_summary.csv`, `coverage.json` and `best_per_architecture.json`.
@@ -123,10 +123,14 @@ Build: `python Phase7/build_phase7_notebook.py`.
 
 Test: `python Phase7/validate_phase7_notebook.py` with torch, numpy, tokenizers, tqdm, matplotlib, nbformat, huggingface_hub, scipy and scikit-learn.
 
-The original local Phase 1 weights were deleted during cleanup. Offline tests use small checkpoints created from the original architecture definitions and synthetic six-file datasets; they verify strict loading and complete training/ranking/export behavior. They do not establish actual task scores or replace loading the real Drive checkpoints. The Hugging Face repository metadata confirms all six documented file paths; file contents require authentication and could not be inspected without your token. Actual dataset compatibility and CUDA execution are runtime checks. See [VALIDATION.md](VALIDATION.md).
+The original local Phase 1 weights were deleted during cleanup. Offline tests use small checkpoints created from the original architecture definitions and synthetic six-file datasets; they verify strict loading and complete training/ranking/export behavior. They do not establish actual task scores or replace loading the actual trained checkpoints. The Hugging Face repository metadata confirms all six documented file paths; file contents require authentication and could not be inspected without your token. Actual dataset compatibility and CUDA execution are runtime checks. See [VALIDATION.md](VALIDATION.md).
 
 ## Saved run results
 
-[Browse Phase 7 results](../results/phase7/) for six trained runs and a separate BM25 baseline, saved settings, metric comparisons, coverage limits, plots and verification. Historical training commits and Codabench scores/IDs remain unavailable. See the [experiment ledger](../experiments/runs.csv).
+[Browse Phase 7 results](../results/phase7/) for six trained runs and a separate BM25 baseline, saved settings, metric comparisons, coverage limits, plots and verification. Historical training commits remain unavailable; the supplied official best score and submission ID are recorded in the result index. See the [experiment ledger](../experiments/runs.csv).
 
-The imported results came from the friend’s Drive account. Checkpoint paths refer to that account until a separate copy is made and verified. Selected ranking scores may include BM25 fusion; dense-only metrics and the lexical baseline are reported separately.
+The saved results are included in `results/phase7/`. Large checkpoints and other excluded runtime artifacts are stored separately. Selected ranking scores may include BM25 fusion; dense-only metrics and the lexical baseline are reported separately.
+
+## Official result identification
+
+The [Phase 7 result index](../results/phase7/) records submission 1039793, displayed official Micro-F1@7 0.2162, reported rank 122, and 6 author-confirmed distinct valid submissions. Exact matching of all 237 query rankings identifies `lightweight_kd_v1` (lightweight student, knowledge distillation, tag `v1`). Both saved prediction files match, and the configuration checksum agrees locally. See [match evidence](../results/phase7/best_submission_match.json).

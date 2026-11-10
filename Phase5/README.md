@@ -2,7 +2,7 @@
 
 Open [CS781_Phase5_Solution_Colab.ipynb](CS781_Phase5_Solution_Colab.ipynb) in Colab, select a GPU, add a secret named **HF** containing your plain `hf_...` token, and run the cells in order. No external pretrained model or external LLM API is used. The notebook is standalone; uploading the local Python source files is unnecessary.
 
-Inputs: `MyDrive/cs781_phase1/bpe_tokenizer/` and the four `run_<architecture>/final_model.pt` Phase 1 checkpoints. This follows the professor's starter progression while replacing its generation objective with the multi-label task in §11 of the capstone document. The encoder–decoder origin contributes its pretrained encoder.
+Inputs: `bpe_tokenizer/` and the four `run_<architecture>/final_model.pt` Phase 1 checkpoints. This follows the professor's starter progression while replacing its generation objective with the multi-label task in §11 of the capstone document. The encoder–decoder origin contributes its pretrained encoder.
 
 Official supplied data:
 
@@ -10,7 +10,7 @@ Official supplied data:
 - `Phase_5_LSI/Train/dev.json`: checkpoint selection, threshold calibration, hyperparameter comparison and ensemble selection.
 - `Phase_5_LSI/Test/test.json`: prediction only. Any supplied test label field is ignored.
 
-Drive outputs: **`MyDrive/cs781_phase5/<experiment>_<RUN_TAG>/`**. Shared label catalogs, manifests and disk-backed token caches live directly in `cs781_phase5/`. Phase 1–4 outputs are not overwritten.
+Run outputs: **`<experiment>_<RUN_TAG>/`**. Shared label catalogs, manifests and disk-backed token caches live directly in `cs781_phase5/`. Phase 1–4 outputs are not overwritten.
 
 ## First run and required approaches
 
@@ -111,3 +111,7 @@ Test: `python Phase5/validate_phase5_notebook.py` in an environment with torch, 
 ## Saved run results
 
 [Browse Phase 5 results](../results/phase5/) for six documented runs, configurations, score comparisons, coverage, plots, and saved verification. Training-complete flags pass in the imported artifacts. These are development selection results; historical code commits and Codabench IDs/scores/acceptance remain unrecorded. See the [experiment ledger](../experiments/runs.csv).
+
+## Official result identification
+
+The [Phase 5 result index](../results/phase5/) records submission 1011686, displayed official Macro-F1 0.3622, reported rank 80, and 6 author-confirmed distinct valid submissions. Exact matching identifies `lightweight_kd_v1`: lightweight student, knowledge distillation, tag `v1`. Both prediction artifacts match among 12 compared files without errors, and the configuration checksum matches locally. See the [match evidence](../results/phase5/best_submission_match.json).

@@ -1,5 +1,5 @@
 All controls are in **Section 3**. Start with one `encoder_full` run. Set up a Colab GPU, an `HF` secret
-containing your plain `hf_...` token, and `MyDrive/cs781_phase1/` with all four final Phase 1 checkpoints
+containing your plain `hf_...` token, and `` with all four final Phase 1 checkpoints
 and the BPE tokenizer. This notebook is standalone; no Phase 2–5 training is rerun.
 
 In an already prepared runtime, changing only the experiment requires rerunning **Section 3, then
@@ -91,7 +91,7 @@ downloaded **only as a metric**; the summarizer and KD teacher use Phase 1 weigh
 change the metric model just to raise numbers. Long summaries may be truncated by the metric model's
 tokenizer; keep evaluation settings consistent and compare realistic output lengths.
 
-Drive outputs: `MyDrive/cs781_phase6/<experiment>_<RUN_TAG>/`. Keep `best_model.pt` for inference/teachers,
+Run outputs: `<experiment>_<RUN_TAG>/`. Keep `best_model.pt` for inference/teachers,
 `last.pt` for resume, and all configurations/metrics/predictions/verification files for your report.
 `prediction.json` is a list of `{id, summary}` objects; `submission.zip` contains only that JSON at its root.
 `best_per_architecture.json` and `experiment_summary.csv` compare compatible complete runs. Retain the

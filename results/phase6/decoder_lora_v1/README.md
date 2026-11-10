@@ -80,10 +80,18 @@ Reference-budget fractions describe target-length limitations, not a claim that 
 
 ![Saved training curves](training_curves.png)
 
-[history.json](history.json) preserves numeric training records. Saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, JSON round-trip, original-ID/submission-format and ZIP checks. These are saved reports, not a new official-data evaluation or confirmation of Codabench acceptance. Development/held-out data were used for selection, and comparison across many runs can overestimate generalization. The private test score and submission ID remain unrecorded. No standalone environment report was exported.
+[history.json](history.json) preserves numeric training records. Saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, JSON round-trip, original-ID/submission-format and ZIP checks. These are saved reports, not a new official-data evaluation or confirmation of Codabench acceptance. Development/held-out data were used for selection, and comparison across many runs can overestimate generalization. The matched official result and submission ID are recorded below; the rank-recording date remains pending. No standalone environment report was exported.
 
 ## Artifact storage
 
-Expected checkpoint path: `MyDrive/cs781_phase6/decoder_lora_v1/best_model.pt` in your Drive account. The checkpoint path is recorded from the original folder layout and has not been independently verified. Weights, embeddings, predictions/generated summaries, caches and submission ZIPs remain outside Git.
+The configuration, metrics, history, verification, available plots, and task-specific policy files in this folder are included in the repository.
+
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 6 results](../) · [All results](../../)
+
+## Matched official best submission
+
+Submission **1022146**, reported rank **76**, matches this run’s prediction JSON and ZIP across **100 generated summaries**. It is the only matching run folder among **12 compared artifacts**, with no errors. The saved configuration checksum agrees with this folder’s [run_config.json](run_config.json). See [matching evidence](../best_submission_match.json) and the [official result record](../official_best.json).
+
+Official displayed scores are **BERTScore F1 0.8361**, **ROUGE-1 F1 0.3424**, and **ROUGE-L F1 0.1894**. These rounded test metrics are separate from this run’s full 351-document held-out BERTScore F1 **0.8391852378845215** and its 128-document checkpoint-selection score. The author confirmed **6 distinct valid submissions**. The matched configuration records architecture `decoder_only`, method `lora`, experiment `decoder_lora`, and tag `v1`. Weights and original training commits were not independently verified; the rank-recording date remains pending.

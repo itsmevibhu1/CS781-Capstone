@@ -18,12 +18,12 @@ These models are defined for training from scratch. Inspect the configuration ce
 ## Run and storage
 
 1. Upload the main notebook to Colab and select a GPU runtime.
-2. Follow its Hugging Face authentication and Drive setup cells.
+2. Follow its Hugging Face authentication and storage setup cells.
 3. Set the architecture and training configuration before running the remaining cells.
 4. Preserve the trained tokenizer and model checkpoints for downstream phases.
 5. Validate and upload each submission archive to Codabench; record acceptance and scores separately.
 
-The configured Drive project is `MyDrive/cs781_phase1/`, with `bpe_tokenizer/` and architecture-specific `run_<architecture>/` folders. The notebook writes `prediction.json` and `submission.zip` into each run folder. Large artifacts remain outside Git.
+Use the configured project directory with `bpe_tokenizer/` and architecture-specific `run_<architecture>/` folders. The notebook writes `prediction.json` and `submission.zip` into each run folder. Large artifacts remain outside Git.
 
 The local [bpe_tokenizer/](../bpe_tokenizer/) contains the saved vocabulary and merge files. Preserve the exact tokenizer paired with a checkpoint when reproducing a run.
 
@@ -36,3 +36,7 @@ Populate [the experiment ledger](../experiments/runs.csv) from actual artifacts:
 ## Saved run results
 
 [Browse the four Phase 1 run folders](../results/phase1/). Only saved loss plots were exported. The run pages explain the missing historical configurations, numeric metrics, verification, and Codabench records; no historical settings were inferred from current notebook defaults.
+
+## Official result identification
+
+The [Phase 1 result index](../results/phase1/) now records official submission 962785 and its reported rank and metrics. An exact comparison of all 1,000 predictions identifies `run_lightweight` as the matching saved run: its JSON and ZIP both match the official submission among eight compared artifacts, with no errors. See the [matching evidence](../results/phase1/best_submission_match.json). Weight checksums and the original training commit remain unverified.

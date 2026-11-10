@@ -36,7 +36,7 @@ The retrieval model encodes queries and cases into document representations. Eva
 
 Exact settings: [run_config.json](run_config.json). Original architecture, parameter counts, selected blocks and teacher metadata: [model_metadata.json](model_metadata.json). Common adapter/KD settings apply only to the chosen method.
 
-Recorded teacher run: `/content/drive/MyDrive/cs781_phase7/decoder_partial_v1`. Its saved metadata reports 111,077,633 parameters, larger than the student. Teacher selection metric: `dense_micro_f1_at_7`. The checkpoint was not loaded or independently checked during documentation. Saved file size/time metadata is not a cryptographic checkpoint checksum.
+Recorded teacher run: `decoder_partial_v1`. Its saved metadata reports 111,077,633 parameters, larger than the student. Teacher selection metric: `dense_micro_f1_at_7`. The checkpoint was not loaded or independently checked during documentation. Saved file size/time metadata is not a cryptographic checkpoint checksum.
 
 ## Evaluation results
 
@@ -77,10 +77,12 @@ These are sampled chunk representations, not complete document coverage. See [ch
 
 ![Saved training curves](training_curves.png)
 
-[history.json](history.json) preserves numeric training records. Saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, JSON round-trip, original-ID/submission-format and ZIP checks. These are saved reports, not a new official-data evaluation or confirmation of Codabench acceptance. Development/held-out data were used for selection, and comparison across many runs can overestimate generalization. The private test score and submission ID remain unrecorded. No standalone environment report was exported.
+[history.json](history.json) preserves numeric training records. Saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, JSON round-trip, original-ID/submission-format and ZIP checks. These are saved reports, not a new official-data evaluation or confirmation of Codabench acceptance. Development/held-out data were used for selection, and comparison across many runs can overestimate generalization. Official best submission **1039793** uniquely matches this run: **Micro-F1@7 0.2162**, **Micro-Precision@7 0.2206**, **Micro-Recall@7 0.2119**, reported rank **122**. Both saved prediction artifacts match all 237 query rankings, and the configuration checksum agrees locally. See [official record](../official_best.json) and [match evidence](../best_submission_match.json). These rounded official test values are separate from the dev scores above. No standalone environment report was exported.
 
 ## Artifact storage
 
-Expected checkpoint path: `MyDrive/cs781_phase7/lightweight_kd_v1/best_model.pt` in **your friend’s Drive account**. The checkpoint path is recorded from the original folder layout and has not been independently verified. It must not be interpreted as a checkpoint already copied into your own Drive. Weights, embeddings, predictions/generated summaries, caches and submission ZIPs remain outside Git.
+The configuration, metrics, history, verification, available plots, and task-specific policy files in this folder are included in the repository.
+
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 7 results](../) · [All results](../../)

@@ -61,7 +61,7 @@ Scores use the 0–1 scale. The combined score pools CL and IT sentences and the
 | CL dev | 0.32675 | 0.36044 | 0.34062 |
 | IT dev | 0.44510 | 0.52956 | 0.42702 |
 
-The combined development set contains 2,142 sentences. At the saved checkpoint, greedy macro-F1 is 0.41280 and selected-decoder macro-F1 is 0.44106. This compares decoding at one checkpoint, not two independently trained models. Development labels were used for checkpoint and decoder selection; these are selection scores. Codabench score, submission ID, and acceptance have not yet been recorded.
+The combined development set contains 2,142 sentences. At the saved checkpoint, greedy macro-F1 is 0.41280 and selected-decoder macro-F1 is 0.44106. This compares decoding at one checkpoint, not two independently trained models. Development labels were used for checkpoint and decoder selection; these are selection scores. The matched official score and submission ID are recorded below; the rank-recording date remains pending.
 
 Full scores: [metrics.json](metrics.json). Per-label results: [per_label_metrics.csv](per_label_metrics.csv). Selection evidence: [best_dev_metrics.json](best_dev_metrics.json), [best_selection_metrics.json](best_selection_metrics.json), and [decoding_candidates.json](decoding_candidates.json).
 
@@ -75,8 +75,14 @@ Full scores: [metrics.json](metrics.json). Per-label results: [per_label_metrics
 
 The saved [verification.json](verification.json) reports training complete and passing checkpoint-reload, development JSON round-trip, label vocabulary, test ID/order, submission ZIP round-trip, and train/dev/test separation checks. These saved checks do not establish Codabench acceptance.
 
-Recorded test output coverage: 10 documents and 2,197 sentences. Checkpoints are expected at `MyDrive/cs781_phase3/lightweight_kd_kd_context2/best_model.pt` and `MyDrive/cs781_phase3/lightweight_kd_kd_context2/last.pt`, following the original run-folder layout. These Drive paths have not been independently checked here and do not grant access. Predictions and submission ZIPs remain in Drive.
+Recorded test output coverage: 10 documents and 2,197 sentences. Checkpoint files are excluded from Git and have not been independently checked here. Predictions and submission ZIPs are excluded from Git.
 
 Training history: [history.json](history.json). Class weights: [loss_class_weights.json](loss_class_weights.json).
 
 [All Phase 3 results](../) · [All results](../../)
+
+## Matched official best submission
+
+Submission **992321**, reported rank **110**, matches this run’s prediction JSON and ZIP across **10 documents and 2,197 ordered role labels**. It is the only matching run folder among **16 compared artifacts**, with no errors. The saved [configuration](run_config.json) checksum also matches the match report. See [matching evidence](../best_submission_match.json) and [official result](../official_best.json).
+
+The official displayed **Macro-F1 is 0.4290**, **Macro-Precision 0.4887**, and **Macro-Recall 0.4309**. These rounded test scores are separate from this run’s local dev Macro-F1 **0.4410581655395027**. Its configuration records architecture `lightweight`, method `kd`, tag `kd_context2`, and context setting 2. The author confirmed eight distinct valid Phase 3 submissions. Checkpoint weights and historical training commits were not independently verified.

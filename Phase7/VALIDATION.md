@@ -21,6 +21,6 @@ Verified:
 - Export JSON round trips and strict rejection of missing queries, duplicate/short lists, foreign-pool IDs and integer-valued prediction IDs; ZIP root/layout and JSON contents.
 - Experiment comparison, all-four-origin/method coverage and best run per architecture.
 
-Limits: no actual competition score, gated-data schema guarantee, Colab CUDA result or Codabench acceptance is asserted. Synthetic test scores are implementation checks, not retrieval quality. Official tests must use the real Drive Phase 1 weights and authorized dataset download. The notebook does not fabricate a private test score.
+Limits: no actual competition score, gated-data schema guarantee, Colab CUDA result or Codabench acceptance is asserted. Synthetic test scores are implementation checks, not retrieval quality. Official tests must use the actual Phase 1 weights and authorized dataset download. The notebook does not fabricate a private test score.
 
 Reproduce with `python Phase7/validate_phase7_notebook.py` in the dependencies listed in README.

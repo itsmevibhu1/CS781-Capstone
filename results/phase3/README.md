@@ -18,9 +18,15 @@ The highest recorded combined development macro-F1 is **0.44106**, from `lightwe
 ## Reading the comparisons
 
 - Scores use the 0–1 scale. Combined macro-F1 pools both domains across 13 labels; it is not the mean of CL and IT macro-F1.
-- Development labels selected checkpoints and decoders. These are selection scores; original training commits, Codabench scores, submission IDs, and acceptance are not yet recorded. Eight saved runs do not prove eight accepted submissions.
+- Development labels selected checkpoints and decoders. These are selection scores; original training commits remain unrecorded. The official best submission is linked below, and the author confirmed eight distinct valid submissions; those confirmations are separate from saved local-dev metrics.
 - The `v1` runs use context setting 1. The two `kd_context2` runs use setting 2. The LoRMA+ run with that tag is an adapted model; only the `lightweight_kd` experiment applies distillation.
 - Architecture and adaptation both vary across several rows. Treat these as descriptive comparisons, not isolated estimates of adaptation effects. KD context variants also involve separately trained teachers. No repeated-seed uncertainty estimate is available.
 - All saved verification files report training complete and passing artifact checks. Those reports do not replace official evaluator or Codabench acceptance evidence.
 
 [Phase 3 implementation and instructions](../../Phase3/README.md) · [Experiment ledger](../../experiments/runs.csv) · [All results](../)
+
+## Matched official best submission
+
+Submission **992321**, reported rank **110**, has displayed **Macro-F1 0.4290**, **Macro-Precision 0.4887**, and **Macro-Recall 0.4309**. These are rounded four-decimal leaderboard values. The downloaded ZIP contains role lists for **10 documents and 2,197 sentences**.
+
+[official_best.json](official_best.json) preserves the supplied metrics and reference fingerprints. **Matched run: `lightweight_kd_kd_context2`**, a lightweight student trained with knowledge distillation and context setting 2. The [match report](best_submission_match.json) compares 16 artifacts with no errors; both this run’s prediction JSON and ZIP match all 2,197 labels across 10 documents. The reported configuration checksum matches locally. The author confirmed **8 distinct valid submissions**; the rank-recording date remains unconfirmed. Local-dev scores in the comparison table are separate from the official test score.

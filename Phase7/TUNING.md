@@ -82,7 +82,7 @@ not the Phase 6 summary list format. Every test query must have seven unique str
 Duplicate IDs with conflicting case contents fail instead of being overwritten. Empty text is audited and
 encoded with UNK. A pool with no usable text stops for schema inspection.
 
-Outputs: `MyDrive/cs781_phase7/<experiment>_<RUN_TAG>/`. Keep best/last checkpoints for inference/resume,
+Outputs: `<experiment>_<RUN_TAG>/`. Keep best/last checkpoints for inference/resume,
 dev/test embeddings for ranking analysis, full configs/metrics, error reports and submission ZIPs.
 The root CSV and `best_per_architecture.json` compare complete compatible runs. `bm25_baseline/` is an
 extra diagnostic submission, not a required adaptation method. No private test score is fabricated and

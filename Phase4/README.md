@@ -2,8 +2,8 @@
 
 Open [CS781_Phase4_Solution_Colab.ipynb](CS781_Phase4_Solution_Colab.ipynb) in Colab. Select a GPU, create a secret named **HF** containing only your `hf_...` access token, and run all cells.
 
-Inputs: `MyDrive/cs781_phase1/` (your four trained weights and shared BPE tokenizer).
-Outputs: **`MyDrive/cs781_phase4/<run_name>_<RUN_TAG>/`**.
+Inputs: `` (your four trained weights and shared BPE tokenizer).
+Outputs: **`<run_name>_<RUN_TAG>/`**.
 
 The notebook follows the professor's starter workflow and Phase 4 §10. It downloads all three official files:
 
@@ -13,9 +13,9 @@ The notebook follows the professor's starter workflow and Phase 4 §10. It downl
 
 Output format differs from Phase 3: `prediction.json` is a **list** of `{"id": original_id, "pred": 0}` objects, with an integer outcome of 0 or 1 for every test case. The ZIP contains only this JSON at its root. Upload the ZIP to Codabench manually.
 
-Section 4 retains every train/dev instance when several rows share a case ID. Internal row keys prevent overwriting texts, labels, probabilities or validation predictions; original IDs remain in exported JSON. `MyDrive/cs781_phase4/case_instance_audit.json` records row counts and repeated-ID examples. Cross-split checks still compare original case IDs and texts. Duplicate test IDs stop loading for inspection because assigning new test IDs would change the submission contract.
+Section 4 retains every train/dev instance when several rows share a case ID. Internal row keys prevent overwriting texts, labels, probabilities or validation predictions; original IDs remain in exported JSON. `case_instance_audit.json` records row counts and repeated-ID examples. Cross-split checks still compare original case IDs and texts. Duplicate test IDs stop loading for inspection because assigning new test IDs would change the submission contract.
 
-Section 4 detects the contents of each downloaded file instead of assuming its `.json` suffix describes the format. Supported inputs are JSON, JSON Lines, CSV with explicit `id`/`text` columns, and safely parsed Python literal lists/mappings. UTF-8 BOM and UTF-16 BOM are supported. Blank files, LFS pointers, HTML/XML responses and malformed records are rejected; no invalid lines are skipped. Parsing failures trigger one fresh Hugging Face download. `dataset_loading_report.json` in the Phase 4 Drive folder records the split, byte size, format and any failed attempts. If parsing still fails, the exception names the specific split and source filename.
+Section 4 detects the contents of each downloaded file instead of assuming its `.json` suffix describes the format. Supported inputs are JSON, JSON Lines, CSV with explicit `id`/`text` columns, and safely parsed Python literal lists/mappings. UTF-8 BOM and UTF-16 BOM are supported. Blank files, LFS pointers, HTML/XML responses and malformed records are rejected; no invalid lines are skipped. Parsing failures trigger one fresh Hugging Face download. `dataset_loading_report.json` in the Phase 4 configured storage folder records the split, byte size, format and any failed attempts. If parsing still fails, the exception names the specific split and source filename.
 
 If you encountered `Duplicate/ambiguous case ID 2019_890` before training, upload the updated notebook to Colab, run Sections 1–4 and continue through the remaining sections. The failed run has no trained results to resume. Keep your chosen experiment and hyperparameters. Existing completed runs using an older loader require a new `RUN_TAG` because instance keys change the dataset fingerprint.
 
@@ -82,7 +82,7 @@ This starts a new Phase 1-initialized student. Unlike the Phase 3 workflow, a co
 
 Use a **new `RUN_TAG`** when changing a manual setting; rerun Section 3 onward. Keep the original split and seed for controlled comparisons. For exact resume, keep the same tag and settings. Increasing epochs under a new tag starts from Phase 1 with a new schedule; it does not extend a completed schedule.
 
-The default reads up to four spread-out overlapping windows, including beginning/end. It is a sampled representation. `chunk_coverage.json` reports actual coverage. Increase the budget after inspecting coverage/runtime; `MAX_CHUNKS=0` or policy `all` reads all windows and can be expensive. Token IDs use memory-mapped int32 cache files, avoiding a full in-memory token corpus; Colab stages canonical Drive caches onto local disk for faster reads.
+The default reads up to four spread-out overlapping windows, including beginning/end. It is a sampled representation. `chunk_coverage.json` reports actual coverage. Increase the budget after inspecting coverage/runtime; `MAX_CHUNKS=0` or policy `all` reads all windows and can be expensive. Token IDs use memory-mapped int32 cache files, avoiding a full in-memory token corpus; Colab stages canonical configured storage caches onto local disk for faster reads.
 
 ## Scores, verification and outputs
 
@@ -102,4 +102,4 @@ Run `python Phase4/validate_phase4_notebook.py` in an environment containing tor
 
 ## Saved run results
 
-[Browse Phase 4 results](../results/phase4/) for six documented runs, configurations, score comparisons, coverage, plots, and saved verification. Training-complete flags pass in the imported artifacts. These are development selection results; historical code commits and Codabench IDs/scores/acceptance remain unrecorded. See the [experiment ledger](../experiments/runs.csv).
+[Browse Phase 4 results](../results/phase4/) for six documented runs, configurations, score comparisons, coverage, plots, and saved verification. Training-complete flags pass in the imported artifacts. These are development selection results; historical code commits remain unrecorded. The author confirmed no Phase 4 Codabench submission was made (valid count 0; official score/rank unavailable). The final code variant is selected by saved development macro-F1: `lightweight_lorma_v1` (0.68233). See the [experiment ledger](../experiments/runs.csv).

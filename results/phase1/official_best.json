@@ -1,0 +1,44 @@
+{
+  "phase": 1,
+  "codabench_username": "v_231145",
+  "submission_id": 962785,
+  "submission_timestamp_displayed": "2026-10-05 21:52",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "BERTScore F1",
+    "value": 0.83094329
+  },
+  "secondary_metrics": {
+    "ROUGE-L F1": 0.19069432,
+    "BLEU-4": 0.03978785
+  },
+  "evaluated_examples": 1000,
+  "reported_rank": 75,
+  "rank_recorded_date": null,
+  "valid_distinct_submission_count": 4,
+  "source": "User-provided Codabench detailed-results and leaderboard screenshots, received 2026-11-09.",
+  "archive_filename": "submission(1).zip",
+  "archive_sha256": "ce9c6859bc8fe58b0a3a68999d3e2910a26925b6c2d11b6546b6f1eb24fbb540",
+  "prediction_file_sha256": "f27eac1bd4d78dd9b4137ebbcccb3322dfa328bb92c09ce6eae0cab783d5aa4b",
+  "prediction_canonical_sha256": "1ac3f7792b7b9ec592f87df7f31b722db36e909b807373a82b505ae79f1b6689",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "lightweight",
+    "run_folder": "run_lightweight",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "aaa06140dbff90cb27063ab9e282c954272546b6ab884e082c6a7d55c0e771e3",
+    "compared_files": 8,
+    "matched_files": [
+      "run_lightweight/prediction.json",
+      "run_lightweight/submission.zip"
+    ],
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both matching artifacts belong to the same saved run; their 1,000 predictions match the downloaded official submission after JSON-key-order/serialization normalization. No other compared run matched. Original training commit and checkpoint checksum remain unverified.",
+    "checkpoint_filename": "final_model.pt"
+  },
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed the finished submissions shown for Phases 1\u20133 were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  }
+}

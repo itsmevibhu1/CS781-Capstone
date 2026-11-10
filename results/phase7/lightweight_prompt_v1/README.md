@@ -78,6 +78,8 @@ These are sampled chunk representations, not complete document coverage. See [ch
 
 ## Artifact storage
 
-Expected checkpoint path: `MyDrive/cs781_phase7/lightweight_prompt_v1/best_model.pt` in **your friend’s Drive account**. The checkpoint path is recorded from the original folder layout and has not been independently verified. It must not be interpreted as a checkpoint already copied into your own Drive. Weights, embeddings, predictions/generated summaries, caches and submission ZIPs remain outside Git.
+The configuration, metrics, history, verification, available plots, and task-specific policy files in this folder are included in the repository.
+
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 7 results](../) · [All results](../../)

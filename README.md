@@ -20,33 +20,31 @@ Phase 1 implements decoder-only, encoder-decoder, hybrid Prefix-LM, and lightwei
 
 1. Open the relevant main notebook in Google Colab and choose a GPU runtime.
 2. Supply a Hugging Face token with access to the official course dataset through the authentication mechanism in that notebook. Never commit tokens.
-3. Mount Google Drive and confirm the configured input/output paths.
+3. Configure the notebook input/output locations and make the required data and checkpoints available.
 4. Select the experiment and run tag, then execute the notebook in order. Follow the phase README for experiment-specific settings.
 5. Preserve each run's configuration, metrics, checkpoint, and submission. Record actual Codabench submission IDs and scores separately from development scores.
 
 Install dependencies using each notebook's installation cell. A locked environment for the completed experiments has not yet been recorded.
 
-## Artifact storage
+## Results included in this repository
 
-Saved configurations, metrics, histories, verification reports, and available plots are included in this repository under `results/`. Cloning the repository downloads these committed results.
+Saved configurations, metrics, histories, verification reports, and available plots are included under `results/`.
 
-| Phase | Results included in this repository | Runtime Drive directory |
-| --- | --- | --- |
-| 1 | [Loss plots and documented evidence gaps](results/phase1/) | `MyDrive/cs781_phase1/` |
-| 2 | [Configurations, validation metrics, and plots](results/phase2/) | `MyDrive/cs781_phase2/` |
-| 3 | [Configurations, development metrics, and plots](results/phase3/) | `MyDrive/cs781_phase3/` |
-| 4 | [Configurations, development metrics, and plots](results/phase4/) | `MyDrive/cs781_phase4/` |
-| 5 | [Configurations, development metrics, and plots](results/phase5/) | `MyDrive/cs781_phase5/` |
-| 6 | [Configurations, held-out metrics, and plots](results/phase6/) | `MyDrive/cs781_phase6/` |
-| 7 | [Configurations, retrieval metrics, plots, and BM25 baseline](results/phase7/) | `MyDrive/cs781_phase7/` |
+| Phase | Results |
+| --- | --- |
+| 1 | [Loss plots and official result evidence](results/phase1/) |
+| 2 | [Configurations, validation metrics, and plots](results/phase2/) |
+| 3 | [Configurations, development metrics, and plots](results/phase3/) |
+| 4 | [Configurations, development metrics, and plots](results/phase4/) |
+| 5 | [Configurations, development metrics, and plots](results/phase5/) |
+| 6 | [Configurations, held-out metrics, and plots](results/phase6/) |
+| 7 | [Configurations, retrieval metrics, plots, and BM25 baseline](results/phase7/) |
 
-The Drive paths above are input/output locations used by the Colab notebooks. Model weights, checkpoints, datasets, caches, prediction/probability files, embeddings, and submission archives are excluded from Git and stored separately. Their Drive paths do not grant download access; checkpoint access instructions and checksums still need to be supplied for reproducing trained runs.
-
-The shared tokenizer vocabulary and merges are included in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–7 load Phase 1 checkpoints and the paired tokenizer from their configured runtime paths. An [experiment ledger](experiments/runs.csv) links saved runs to their repository configurations and expected external checkpoint locations.
+Model weights, checkpoints, datasets, caches, predictions, embeddings, and submission archives are excluded from Git. The shared tokenizer vocabulary and merges are included in [bpe_tokenizer/](bpe_tokenizer/). Phases 2–7 initialize from the appropriate Phase 1 checkpoint; configure input and output locations in the notebooks before running them.
 
 ## Experiment records and results
 
-[experiments/runs.csv](experiments/runs.csv) is the ledger for actual runs and submissions. Fill it from saved run artifacts and Codabench records, rather than reconstructing scores from memory. Use repository-relative paths for configurations and exact Drive paths for checkpoints. Record the code commit used when known; leave unavailable information blank.
+[experiments/runs.csv](experiments/runs.csv) is the ledger for actual runs and submissions. Fill it from saved run artifacts and Codabench records, rather than reconstructing scores from memory. Use repository-relative paths for configurations. Record the code commit used when known; leave unavailable information blank.
 
 Keep development and Codabench scores separate. Development scores used for checkpoint or decoder selection are selection scores. Synthetic validation metrics do not measure capstone performance.
 
@@ -69,7 +67,7 @@ Keep competition solutions private and provide instructor access according to co
 
 ## Results
 
-[Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1’s official best result matches the lightweight saved run by exact prediction content; achieved token totals and numeric histories remain unrecorded. Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights remain in Drive.
+[Browse results by phase](results/). Results currently cover four Phase 1 plot folders, 14 Phase 2 runs, and eight Phase 3 runs. Phase 1’s official best result matches the lightweight saved run by exact prediction content; achieved token totals and numeric histories remain unrecorded. Phase 2 and Phase 3 include saved configurations and selection metrics. Each phase has its own experiment index; model weights are excluded from Git.
 
 Phase 4 and Phase 5 each contain six documented runs with saved configurations, development scores, coverage, plots, and verification. See [Phase 4 results](results/phase4/) and [Phase 5 results](results/phase5/).
 

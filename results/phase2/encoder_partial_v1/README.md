@@ -84,6 +84,6 @@ Checkpoint-selection scores: [best_validation_metrics.json](best_validation_metr
 
 No standalone `verification.json` was included in this export. A post-training validation report and decoder-selection artifacts were not included. The metrics record training complete, but neither that flag nor exported verification establishes Codabench acceptance. The private test score and submission ID have not been recorded.
 
-Expected checkpoint: `MyDrive/cs781_phase2/encoder_partial_v1/best_model.pt`, following the original folder layout. This path has not been independently verified. Weights, predictions, and submission ZIPs remain in Drive. Historical code commits, checkpoint checksums, and teacher checkpoint hashes where applicable still need recording.
+Weights and checkpoint files are excluded from Git; checkpoint contents have not been independently verified.
 
 [All Phase 2 results](../) · [All results](../../)

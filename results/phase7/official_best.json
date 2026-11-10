@@ -1,0 +1,52 @@
+{
+  "phase": 7,
+  "codabench_username": "v_231145",
+  "submission_id": 1039793,
+  "submission_timestamp_displayed": "2026-11-07 14:49",
+  "submission_timestamp_timezone": null,
+  "primary_metric": {
+    "name": "Micro-F1@7",
+    "value": 0.2162,
+    "precision": "displayed to four decimal places; unrounded value not supplied"
+  },
+  "secondary_metrics": {
+    "Micro-Precision@7": 0.2206,
+    "Micro-Recall@7": 0.2119
+  },
+  "secondary_metric_precision": "displayed to four decimal places",
+  "reported_rank": 122,
+  "rank_recorded_date": null,
+  "finished_submissions_shown": 6,
+  "valid_distinct_submission_count": 6,
+  "valid_count_evidence": {
+    "source": "Author explicitly confirmed all six Finished Phase 7 submissions were distinct.",
+    "confirmed_in_chat_date": "2026-11-09",
+    "all_submission_predictions_independently_deduplicated": false
+  },
+  "source": "User-provided Codabench leaderboard and finished-submission screenshots, received 2026-11-09.",
+  "expected_archive_filename": "phase7_best.zip",
+  "archive_received": true,
+  "archive_sha256": "2aeb694062e94df1578e16e25d38489de960d904cbacaabb1f6b62eaaabb2d22",
+  "prediction_canonical_sha256": "1e955ea0c95495e5bcccc723fe0ba0a0fa82ac3ef0d0b69facaa87f07b690ae1",
+  "model_attribution": {
+    "status": "unique_saved_run_prediction_match",
+    "architecture": "lightweight",
+    "adaptation": "kd",
+    "experiment": "lightweight_kd",
+    "run_tag": "v1",
+    "run_folder": "lightweight_kd_v1",
+    "match_report": "best_submission_match.json",
+    "match_report_sha256": "899f372245553663cdafffa1dcd6c5ba0b8a268ab2c278a580941654585da657",
+    "compared_files": 14,
+    "matched_files": [
+      "lightweight_kd_v1/prediction.json",
+      "lightweight_kd_v1/submission.zip"
+    ],
+    "run_config_sha256": "a2afd72db846dfbbe946cdfd1d4ee8e15c353017356f92707b607d73ab2e8faf",
+    "local_run_config_checksum_matches": true,
+    "checkpoint_reloaded_for_identification": false,
+    "note": "Both saved prediction artifacts exactly match all 237 official query rankings, preserving candidate IDs and rank order. Only one run matched among 14 compared files, without errors. Saved configuration checksum matches locally; checkpoint weights and historical training commit were not independently verified.",
+    "checkpoint_filename": "best_model.pt"
+  },
+  "evaluated_queries": 237
+}

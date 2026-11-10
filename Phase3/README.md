@@ -2,7 +2,7 @@
 
 Upload [CS781_Phase3_Solution_Colab.ipynb](CS781_Phase3_Solution_Colab.ipynb) to Colab, select a GPU runtime, add a secret named **HF** containing only your `hf_...` access token, and run all cells. The token is never printed.
 
-The notebook mounts Drive, reads **your Phase 1** tokenizer/weights from `MyDrive/cs781_phase1/`, and saves to `MyDrive/cs781_phase3/`. It does not use Phase 2 weights: the Phase 3 document requires every experiment to start from Phase 1.
+The notebook reads the Phase 1 tokenizer and model checkpoints and writes outputs to the configured experiment directory. It does not use Phase 2 weights: the Phase 3 document requires every experiment to start from Phase 1.
 
 ## Data usage
 
@@ -71,4 +71,8 @@ The script requires PyTorch, tokenizers, numpy, tqdm, matplotlib, nbformat, and 
 
 The `kd_context2` tag is used for both a LoRMA+ teacher candidate and a smaller KD student; it does not mean both runs use distillation. The saved metadata identifies the KD teacher as `lightweight_lorma` and records the student blocks. Historical code commits and teacher checkpoint hashes were not exported and still need confirmation.
 
-All eight saved runs report training complete. Their development metrics are selection scores, not private test scores. Codabench submission IDs, scores, and acceptance have not yet been entered in the [experiment ledger](../experiments/runs.csv).
+All eight saved runs report training complete. Their development metrics are selection scores, not private test scores. The matched official best result is entered in the [experiment ledger](../experiments/runs.csv); scores for other individual submissions are not yet recorded.
+
+## Official result identification
+
+The [Phase 3 result index](../results/phase3/) records submission 992321, displayed official Macro-F1 0.4290 and rank 110. Exact prediction matching identifies `lightweight_kd_kd_context2`: lightweight architecture, knowledge distillation, run tag `kd_context2`, and context setting 2. Both prediction artifacts match, and the configuration checksum agrees locally. See the [match report](../results/phase3/best_submission_match.json). The author confirmed eight distinct valid submissions.
